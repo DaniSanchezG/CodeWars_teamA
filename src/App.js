@@ -1,19 +1,24 @@
-import { lazy, Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
-import NavBar from "./components/layout/navigation/NavBar";
-import HourGlass from "./components/UI/Spinners/HourGlass";
-const TasksManager = lazy(() => import("./views/TasksManager"));
-const About = lazy(() => import("./views/About"));
-const LoginPage = lazy(() => import("./views/Login/LoginPage"))
-// import TasksManager from "./views/TasksManager";
-// import About from "./views/About";
-// import LoginPage from "./views/Login/LoginPage";
+// import { lazy, Suspense } from "react";
+// import { Route, Routes } from "react-router-dom";
+// import NavBar from "./components/layout/navigation/NavBar";
+// import HourGlass from "./components/UI/Spinners/HourGlass";
+// const TasksManager = lazy(() => import("./views/TasksManager"));
+// const About = lazy(() => import("./views/About"));
+// const LoginPage = lazy(() => import("./views/Login/LoginPage"))
+// // import TasksManager from "./views/TasksManager";
+// // import About from "./views/About";
+// // import LoginPage from "./views/Login/LoginPage";
+
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
   return (
     <>
-      <header>
+    
+      <Footer></Footer>
+   
+      {/* <header>
         <h1>Deploy</h1>
         <NavBar></NavBar>
       </header>
@@ -28,7 +33,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/login" element={<LoginPage />}></Route>
         </Routes>
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }
