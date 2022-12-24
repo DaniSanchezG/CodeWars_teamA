@@ -1,12 +1,10 @@
 import classes from "./App.module.css";
+import ButtonNeon from "./components/UI/Buttons/ButtonNeon";
 
 function App() {
   return (
     <>
-      <div className={classes.btn}>
-        <span ></span>
-        <span ></span>
-      </div>
+      <ButtonNeon />
     </>
   );
 }
