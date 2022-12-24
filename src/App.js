@@ -1,10 +1,13 @@
 import classes from "./App.module.css";
 import ButtonNeon from "./components/UI/Buttons/ButtonNeon";
+import Gallery from "./components/Gallery/Gallery";
 
 function App() {
   return (
     <>
-      <ButtonNeon />
+      <Gallery>
+        <ButtonNeon />
+      </Gallery>
     </>
   );
 }
