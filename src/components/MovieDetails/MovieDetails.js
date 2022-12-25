@@ -1,10 +1,8 @@
 import classes from "./MovieDetails.module.css";
-import movieBanner from "../../assets/movie_image.jpeg";
-import moviePoster from "../../assets/movie_poster.webp";
-import rating from "../../assets/rating.webp";
 import MovieHeader from "./MovieHeader";
 import MovieInfo from "./MovieInfo";
 import MovieSelect from "./MovieSelect";
+import DualRing from "../UI/DualRing";
 import { useState, useEffect } from "react";
 
 function MovieDetails() {
@@ -17,32 +15,39 @@ function MovieDetails() {
       setPending(true);
       setError(null);
 
-      const response = await fetch ("https://star-wars-movies-ad4e6-default-rtdb.europe-west1.firebasedatabase.app/films/" + id + ".json");
+      const response = await fetch(
+        "https://star-wars-movies-ad4e6-default-rtdb.europe-west1.firebasedatabase.app/films/" +
+          id +
+          ".json"
+      );
 
-      if (response.ok){
+      if (response.ok) {
         const data = await response.json();
-        console.log(data);
+        //console.log(data);
         setMovieInfo(data);
       }
-      
-
     } catch (error) {
       setError({
-        message: error.message || "Something went wrong."
-      })
+        message: error.message || "Something went wrong.",
+      });
     }
     setPending(false);
-  }
+  };
 
   useEffect(() => {
-    fetchMovieInfo()
-  }, [])
+    fetchMovieInfo();
+  }, []);
 
   return (
     <div className={classes["movie-details-container"]}>
       <MovieSelect />
-      <MovieHeader />
-      <MovieInfo info={movieInfo}/>
+      {pending === true && <DualRing />}
+      {!pending && movieInfo !== null &&(
+        <>
+          <MovieHeader />
+          <MovieInfo info={movieInfo} />
+        </>
+      )}
     </div>
   );
 }
