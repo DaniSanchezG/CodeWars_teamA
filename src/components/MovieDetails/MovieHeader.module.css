@@ -1,0 +1,57 @@
+/* main movie banner with gradient */
+.movie-banner-container {
+  position: relative;
+  transition: opacity 250ms, padding-bottom 250ms;
+}
+
+.movie-banner-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-banner-container .gradient-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  background: linear-gradient(
+    180deg,
+    #00000000 0%,
+    #0000000a 16%,
+    #00000021 29%,
+    #00000042 41%,
+    #0000006b 51%,
+    #00000094 61%,
+    #000000bd 70%,
+    #000000de 79%,
+    #000000f5 89%,
+    #000000ff 100%
+  );
+}
+
+.banner-title h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2;
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+}
+
+/* yellow button stream on code+ */
+.stream-button {
+  background-color: #fade4b;
+  padding: 1.2em 2em;
+  border-radius: 1.8rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 1.5em 25% 2em 25%;
+  z-index: 5;
+  position: absolute;
+  bottom: -90px;
+}

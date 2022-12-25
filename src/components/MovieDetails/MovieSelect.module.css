@@ -1,0 +1,16 @@
+/* stream on code+ banner */
+.title-container {
+  background-color: #0a0b0b;
+  padding: 1.3em;
+  margin-bottom: 3em;
+}
+
+.title-container h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  line-height: 1.25em;
+  text-align: center;
+}
+
+/* select all film  */
