@@ -9,9 +9,7 @@ function Gallery() {
         <span></span>
       </span>
       <div className={classes.gallery}>
-        <div className={classes["gallery-list"]}>
-          <GalleryItem />
-        </div>
+        <GalleryItem />
       </div>
     </div>
   );
