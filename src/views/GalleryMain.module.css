@@ -1,0 +1,64 @@
+.gallery-container {
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    padding: 0 1.5em;
+  }
+  
+  .title-gallery {
+    width: 100%;
+    color: #fff;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    padding-bottom: 1.2em;
+    margin-bottom: -1em;
+    padding-top: 0.5em;
+  }
+  
+  .title-line {
+    position:absolute;
+    display: inline-block;
+    border-top: 1px solid #454545;
+    height: 2px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: -0.3em;
+  }
+  
+  .title-line > span {
+    margin-left: 0.5em;
+    background-color: #000;
+    padding: 0.5em 0.1em;
+    padding-right: 0.3em;
+  }
+  .gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 768px) {
+      .gallery-container {
+          padding: 0 3em;
+        }
+    .title-gallery {
+      letter-spacing: 0.005em;
+    }
+  }
+  
+  @media (min-width: 992px) {
+  }
+  
+  @media (min-width: 1200px) {
+  }
+  
+  @media (min-width: 1400px) {
+  }
+  

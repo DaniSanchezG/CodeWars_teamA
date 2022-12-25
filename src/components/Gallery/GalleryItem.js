@@ -1,22 +1,19 @@
 import ButtonNeon from "../UI/Buttons/ButtonNeon";
 import classes from "./GalleryItem.module.css";
 
-function GalleryItem(props) {
-    return (
-      <div className={classes["gallery-item"]}>
-        <img
-          src={props.image}
-          alt={props.title}
-        />
-        <div className={classes["item-info"]}>
-          <ButtonNeon />
-          <h2>{props.title}</h2>
-          <p>{props.description}</p>
-          <small>{props.number_images} Images</small>
-          <span className={classes.skew}></span>
-        </div>
+function GalleryItem({image, title, description, number_images, id}) {
+  return (
+    <div className={classes["gallery-item"]}>
+      <img src={image} alt={title} />
+      <div className={classes["item-info"]}>
+        <ButtonNeon />
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <small>{number_images} Images</small>
+        <span className={classes.skew}></span>
       </div>
-    );
-  }
-  
-  export default GalleryItem;
+    </div>
+  );
+}
+
+export default GalleryItem;
