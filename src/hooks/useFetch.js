@@ -1,62 +1,61 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const useFetch = () => {
-  const [tasks, setNewTask] = useState({});
+  const [gallery, setGallery] = useState({});
   const [pending, setPending] = useState(false);
   const [error, setError] = useState(null);
 
-
-  const fetchTasksHandler = async (method = 'GET', task = { id: '', text: '' }) => {
+  const fetchGalleryHandler = async (
+    method = "GET",
+    gallery = {
+      description: "",
+      id: "",
+      image: "",
+      number_images: "",
+      title: "",
+    }
+  ) => {
     try {
       setPending(true);
       setError(null);
       let response = null;
-      const URL = 'https://task-list-5b3fd-default-rtdb.europe-west1.firebasedatabase.app/';
+      const URL =
+        "https://codewars-a-default-rtdb.europe-west1.firebasedatabase.app/";
 
-      if (method === 'DELETE') {
-        response = await fetch(URL + '/tasks/' + task.id + '.json', { method });
-      } else if (method === 'PATCH') {
-        response = await fetch(URL + '/tasks/' + task.id + '.json',
-          {
-            method,
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ title: task.text })
-          }
-        );
-      } else {
-        response = await fetch(URL + '/tasks.json',
-          {
-            method,
-            headers: {
-              'Content-Type': method !== 'GET' ? 'application/json' : ''
-            },
-            body: method !== 'GET' ? JSON.stringify({ title: task.text }) : null
-          }
-        );
-      }
+      response = await fetch(URL + "/gallery.json", {
+        method,
+        headers: {
+          "Content-Type": method !== "GET" ? "application/json" : "",
+        },
+        body:
+          method !== "GET"
+            ? JSON.stringify({
+                description: gallery.description,
+                id: gallery.id,
+                image: gallery.image,
+                number_images: gallery.number_images,
+                title: gallery.title,
+              })
+            : null,
+      });
 
       if (response.ok) {
         const data = await response.json();
-        if (method === 'GET') {
-          setNewTask(data);
+        if (method === "GET") {
+          setGallery(data);
         } else {
-          fetchTasksHandler();
+          fetchGalleryHandler();
         }
       }
-
     } catch (error) {
       setError({
-        message: error.message || 'Something went wrong!'
+        message: error.message || "Something went wrong!",
       });
     }
     setPending(false);
   };
 
-  return (
-    { pending, error, tasks, fetchTasksHandler }
-  );
-}
+  return { pending, error, gallery, fetchGalleryHandler };
+};
 
 export default useFetch;
