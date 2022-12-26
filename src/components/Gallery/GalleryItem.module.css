@@ -23,7 +23,7 @@
   background-color: #1a1a1a;
   font-family: "Cabin", sans-serif;
   padding: 12px;
-  height: 10em;
+  /* height: 10em; */
   width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -38,9 +38,6 @@
 }
 .item-info p {
   color: #b5b7b7;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 .item-info small {

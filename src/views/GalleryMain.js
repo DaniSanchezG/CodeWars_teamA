@@ -6,7 +6,7 @@ import classes from "./GalleryMain.module.css";
 const API_URL =
   "https://codewars-a-default-rtdb.europe-west1.firebasedatabase.app/gallery.json";
 
-const GalleryMain = () => {
+const GalleryMain = ({ filterId }) => {
   const [gallery, setGallery] = useState({});
   const [pending, setPending] = useState(true);
   const [error, setError] = useState(null);
@@ -37,16 +37,20 @@ const GalleryMain = () => {
         <span></span>
       </span>
       <div className={classes.gallery}>
-        {Object.keys(gallery).map((key) => (
-          <GalleryItem
-            key={key}
-            id={key}
-            image={gallery[key].image}
-            title={gallery[key].title}
-            description={gallery[key].description}
-            number_images={gallery[key].number_images}
-          />
-        ))}
+        {pending ? (
+          <DualRing />
+        ) : (
+          Object.keys(gallery).map((key) => (
+            <GalleryItem
+              key={key}
+              id={key}
+              image={gallery[key].image}
+              title={gallery[key].title}
+              description={gallery[key].description}
+              number_images={gallery[key].number_images}
+            />
+          ))
+        )}
       </div>
     </div>
   );
