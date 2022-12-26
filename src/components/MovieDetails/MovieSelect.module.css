@@ -10,7 +10,47 @@
   font-weight: bold;
   letter-spacing: 0.8px;
   line-height: 1.25em;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-text {
+  display: inline-block;
+}
+
+.non-mobile-text {
+  display: none;
 }
 
 /* select all film  */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 540px) {
+  .mobile-text {
+    display: none;
+  }
+
+  .non-mobile-text {
+    display: inline-block;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* here your code */
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* here your code */
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* here your code */
+}

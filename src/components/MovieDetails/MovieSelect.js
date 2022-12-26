@@ -4,12 +4,15 @@ function MovieSelect() {
   return (
     <div>
       <div className={classes["title-container"]}>
-        <h2>STREAM CODE WARS ON CODE+</h2>
+        <h2>
+          <span className={classes["mobile-text"]}>STREAM CODE WARS ON CODE+</span>
+          <span className={classes["non-mobile-text"]}>ALL OF YOUR CODE WARS FAVORITES NOW STREAMING ON CODE+</span>
+          </h2>
       </div>
       <div className={classes["select-container"]}>
-        <select>
+        {/* <select>
           <option value="movie1">Movie1</option>
-        </select>
+        </select> */}
       </div>
     </div>
   );

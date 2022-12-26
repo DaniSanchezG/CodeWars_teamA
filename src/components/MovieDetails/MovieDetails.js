@@ -41,14 +41,17 @@ function MovieDetails() {
   return (
     <div className={classes["movie-details-container"]}>
       <MovieSelect />
-      {pending === true && <DualRing />}
+      <MovieHeader />
+      <MovieInfo />
+    </div>
+      /* {pending === true && <DualRing />}
       {!pending && movieInfo !== null &&(
         <>
           <MovieHeader />
           <MovieInfo info={movieInfo} />
         </>
-      )}
-    </div>
+      )} */
+    
   );
 }
 
