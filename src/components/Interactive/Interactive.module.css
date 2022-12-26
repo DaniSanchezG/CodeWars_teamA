@@ -20,6 +20,7 @@
 }
 .wrapper-img1 {
   width: 50%;
+  height: 50vh;
   background-color: rgb(29, 30, 31);
   border-radius: 5px;
   margin: 10px 10px;
@@ -27,11 +28,11 @@
 .text-1 {
   color: white;
   width: 100%;
+  height: 50%;
   padding-bottom: 20px;
   padding-left: 5px;
 }
-.information-img1 {
-}
+
 
 .cards-container {
   display: flex;
@@ -55,4 +56,24 @@
   width: 100%;
   padding-bottom: 60px;
   padding-left: 5px;
+}
+.trapecio {
+  position: relative;
+  margin-left: 345px;
+  margin-top:-20px;
+  width: 250px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-left: 60px solid transparent;
+  border-bottom: 100px solid black;
+}
+.trapecio1 {
+  position: relative;
+  margin-left: 200px;
+  margin-top:-120px;
+  width: 250px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-left: 60px solid transparent;
+  border-bottom: 100px solid black;
 }

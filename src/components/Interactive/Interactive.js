@@ -11,6 +11,7 @@ function Interactive() {
         <h3 className={classes["text-1"]}>
           Star Wars: The Clone Wars Invades the Tabletop
         </h3>
+        <div className={classes.trapecio1}></div>
       </div>
       <ul className={classes.lateral}>
         <li>
@@ -18,18 +19,21 @@ function Interactive() {
           <img  src={require("../../assets/2.webp")} />
           <h3 className={classes["text-2"]}>Star Wars Jedi: Survivor: Cameron Monaghan on Cal Kestis' Next Adventure</h3>
           </div>
-        </li>
+          <div className={classes.trapecio}></div>
+        </li> 
         <li>
         <div className={classes["wrapper-img2"]}>
           <img  src={require("../../assets/3.webp")} />
           <h3 className={classes["text-2"]}>Star Wars Jedi: Survivor: Cameron Monaghan on Cal Kestis' Next Adventure</h3>
           </div>
+          <div className={classes.trapecio}></div>
         </li>
         <li>
         <div className={classes["wrapper-img2"]}>
           <img  src={require("../../assets/4.webp")} />
           <h3 className={classes["text-2"]}>Star Wars Jedi: Survivor: Cameron Monaghan on Cal Kestis' Next Adventure</h3>
           </div>
+          <div className={classes.trapecio}></div>
         </li>
       </ul>
       </div>
