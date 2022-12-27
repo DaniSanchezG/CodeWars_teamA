@@ -1,70 +1,57 @@
-footer {
-  text-align: center;
-  margin-top: 20%;
+.container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   background-color: #0b0b0b;
-  height: 20em;
-  color: white;
+  padding-top: 1em;
 }
-div .info{
-    padding-top: 1em;
-    font-size: 1.2em;
-}
-div .icon{
-    color: white;
-    fill: currentColor;
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    font-size: x-large;
-    border-radius: 60px
-}
-/* svg.icon {
-  width: 100%;
-  display: inline-block;
-  margin-top: 3em;
-  color: white;
-  padding-top: 5%;
-    display: inline-block;
-    font-size: x-large;
-    border-radius: 60px
-} */
-/* footer .fa-stack {
-  color: #7aa194;
-}
-footer .fa-stack:hover {
-  color: white !important;
-}
-footer .fa-circle:hover {
-  border: 2px solid var(--lightblue);
+.container-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-footer .fa-brands {
-  color: white;
+footer p {
+  text-align: center;
+  font-weight: 500;
 }
-footer .fa-brands:hover {
-  color: var(--lightblue);
-} */
-/* footer span {
-  width: 60px;
-  height: 60px;
-  display: inline-flex;
-  background-color: #7aa194;
-  border-radius: 100%;
-  margin-right: 0.5em;
+.container .icon {
+  fill: currentColor;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 1.4em;
+  margin-top: 1em;
 }
-footer span i {
-  margin-left: 30%;
-  margin-top: 30%;
-} */
-.p2 {
-  font-size: 1.3em;
-  font-weight: normal;
-  color: white;
-  margin-top: 3%;
+.container svg:hover,
+span.description:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 3px white;
+
 }
-footer a {
-  color: #7aa194;
+.icon svg {
+  margin-right: 1.8em;
 }
-footer a:hover {
-  color: var(--lightblue);
+.social-kids{
+  color: gray;
+}
+
+.description {
+  width: 100%;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 1px 4px;
+  margin-left: 3em;
+  background-color: white;
+  color: #0b0b0b;
+  font-weight: bolder;
+  font-size: 0.5em;
+}
+
+.codespace {
+  margin: 4em 0;
 }
