@@ -1,9 +1,10 @@
 import MovieDetails from "./components/MovieDetails/MovieDetails";
 
 function App() {
+  const movieId = "-NKHb9fYfE82rwSCdHPU";
   return (
     <div>
-      <MovieDetails />
+      <MovieDetails id={movieId} />
     </div>
   );
 }

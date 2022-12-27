@@ -5,12 +5,12 @@ import MovieSelect from "./MovieSelect";
 import DualRing from "../UI/DualRing";
 import { useState, useEffect } from "react";
 
-function MovieDetails() {
+function MovieDetails(props) {
   const [movieInfo, setMovieInfo] = useState({});
   const [pending, setPending] = useState(false);
   const [error, setError] = useState("");
 
-  const fetchMovieInfo = async (id = "-NK7V_eOwwQKLkIta4Is") => {
+  const fetchMovieInfo = async (id = "-NKHji9mdD7Z16_HZhAf") => {
     try {
       setPending(true);
       setError(null);
@@ -23,7 +23,6 @@ function MovieDetails() {
 
       if (response.ok) {
         const data = await response.json();
-        //console.log(data);
         setMovieInfo(data);
       }
     } catch (error) {
@@ -35,24 +34,28 @@ function MovieDetails() {
   };
 
   useEffect(() => {
-    fetchMovieInfo();
+    fetchMovieInfo(props.id);
   }, []);
 
   return (
     <div className={classes["movie-details-container"]}>
-      <MovieSelect />
-      <MovieHeader />
-      <MovieInfo />
-    </div>
-      /* {pending === true && <DualRing />}
-      {!pending && movieInfo !== null &&(
+      {pending && <DualRing />}
+
+      {Object.keys(movieInfo).length > 0 && error === null && (
         <>
-          <MovieHeader />
+          <MovieSelect />
+          <MovieHeader info={movieInfo} />
           <MovieInfo info={movieInfo} />
         </>
-      )} */
-    
+      )}
+    </div>
   );
 }
 
 export default MovieDetails;
+
+// <MovieSelect />
+// <Suspense fallback={<DualRing />}>
+//   <MovieHeader info={movieInfo} />
+//   <MovieInfo info={movieInfo} />
+// </Suspense>

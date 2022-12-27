@@ -1,37 +1,33 @@
 import classes from "./MovieInfo.module.css";
 
-function MovieInfo() {
+function MovieInfo(props) {
   return (
     <div>
       <div className={classes["movie-info-container"]}>
         <div className={classes["poster-container"]}>
           <img
-            src="https://lumiere-a.akamaihd.net/v1/images/p_starwarstheriseofskywalker_18508_3840c966.jpeg"
+            src={props.info.images.posterImg}
             alt="movie-poster"
           />
         </div>
         <div className={classes["main-info-container"]}>
-          <h1>Star Wars: The Rise of Skywalker (Episode IX)</h1>
+          <h1>{props.info.movieTitle}</h1>
           <p>
-            <strong>Rating:</strong> PG-13
+            <strong>Rating:</strong> {props.info.rating}
           </p>
           <p>
-            <strong>Genre:</strong> Action, Adventure, Science Fiction
+            <strong>Genre:</strong> {props.info.genre}
           </p>
         </div>
         <div className={classes["description-container"]}>
           <p className={classes["text-container"]}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla velit
-            velit, porttitor a erat ut, feugiat feugiat odio. Nulla tempus ac ex
-            id tincidunt. Curabitur lobortis hendrerit volutpat. Donec commodo
-            at tortor eget placerat. Aliquam orci nisl, commodo at sem non,
-            tristique finibus ante. Sed condimentum libero vitae mi consectetur.
+            {props.info.description}
           </p>
         </div>
         <div className={classes["rating-container"]}>
           <div>
             <img
-              src="https://lumiere-a.akamaihd.net/v1/images/rating_pg13_d776f3ac.png?region=0%2C0%2C104%2C44"
+              src={props.info.images.ratingImg}
               alt="rating"
               className={classes["rating-img"]}
             />
