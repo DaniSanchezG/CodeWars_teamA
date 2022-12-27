@@ -136,7 +136,7 @@
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   .movie-info-container {
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
   }
   .poster-container {
