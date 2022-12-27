@@ -1,5 +1,6 @@
 import classes from "./Related.module.css";
 import { useState } from "react";
+import imgRelated from "../../assets/imgRelated";
 
 function Related() {
   const [cards, setCards] = useState([
@@ -41,7 +42,7 @@ function Related() {
           <h2>Related</h2>
         </div>
         <div>
-          <img src="" alt="" />
+          <img src={imgRelated.img1}/>
           <div className={classes["cards-container"]}>
             {/*Aqui componente*/}
             <h3></h3>
