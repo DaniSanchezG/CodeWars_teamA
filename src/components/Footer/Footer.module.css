@@ -30,7 +30,10 @@ footer p {
 .container svg:hover,
 span.description:hover {
   cursor: pointer;
-  box-shadow: 1px 1px 3px white;
+  /* box-shadow: 1px 1px 3px white; */
+  /* box-shadow: 0 0 50px white; */
+  filter: drop-shadow(0.6px 0.6px 0.6px white);
+
 
 }
 .icon svg {
@@ -48,10 +51,31 @@ span.description:hover {
   margin-left: 3em;
   background-color: white;
   color: #0b0b0b;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 0.5em;
 }
 
 .codespace {
   margin: 4em 0;
 }
+/* Bootstrap breakpoints /
+/ Small devices (landscape phones, 576px and up) /
+@media (min-width: 576px) { 
+    / here your code /
+ }
+/ Medium devices (tablets, 768px and up) /
+@media (min-width: 768px) { 
+    / here your code /
+ }
+/ Large devices (desktops, 992px and up) /
+@media (min-width: 992px) { 
+    / here your code /
+ }
+/ X-Large devices (large desktops, 1200px and up) /
+@media (min-width: 1200px) {
+    / here your code /
+ }
+/ XX-Large devices (larger desktops, 1400px and up) /
+@media (min-width: 1400px) {
+    / here your code */
+/* } */
