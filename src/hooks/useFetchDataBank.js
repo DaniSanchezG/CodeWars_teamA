@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useFetch = () => {
+const useFetchDataBank = () => {
   const [tasks, setNewTask] = useState({});
   const [pending, setPending] = useState(false);
   const [error, setError] = useState(null);
@@ -11,7 +11,7 @@ const useFetch = () => {
       setPending(true);
       setError(null);
       let response = null;
-      const URL = 'https://task-list-5b3fd-default-rtdb.europe-west1.firebasedatabase.app/';
+      const URL = 'https://characters-206d3-default-rtdb.europe-west1.firebasedatabase.app/';
 
       if (method === 'DELETE') {
         response = await fetch(URL + '/tasks/' + task.id + '.json', { method });
@@ -59,4 +59,4 @@ const useFetch = () => {
   );
 }
 
-export default useFetch;
+export default useFetchDataBank;
