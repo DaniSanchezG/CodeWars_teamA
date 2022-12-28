@@ -1,0 +1,46 @@
+.related {
+  padding: 2em 5em;
+}
+.cards-container {
+  width: 40%;
+  height: auto;
+  /* padding: 1em; */
+}
+
+.cards-container img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+  cursor: pointer;
+}
+
+.cards-container .characters-container {
+  background-color: #1d1e1f;
+  display: block;
+  border-bottom-left-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
+}
+
+.cards-container .content-info {
+  padding: 0 0 0 0.8em;
+  padding-bottom: 3em;
+}
+
+.cards-container .content-info h3 {
+  font-size: 1.2em;
+  color: #ffffff;
+  font-family: "DINNext";
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1140px) {
+}

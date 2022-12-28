@@ -7,7 +7,7 @@
   cursor: pointer;
   width: 1em;
   height: 1em;
-  padding: 1em;
+  padding: 0 .6em .4em; 
 }
 
 .-container:hover span {

@@ -14,28 +14,26 @@ export const datas = [
   {
     id: 1,
     character: "Lt. Gorn",
-    img: { path: gorn },
+    img: { path: gorn, text: "Lt. Gorn" },
   },
   {
     id: 2,
     character: "Arvel Skeen",
-    img: { path: arvel },
+    img: { path: arvel, text: "Arvel Skeen" },
   },
   {
     id: 3,
     character: "Karis Nemik",
-    img: { path: karis },
+    img: { path: karis, text: "Karis Nemik" },
   },
   {
     id: 4,
     character: "Cassian Andor",
-    img: { path: cassian },
+    img: { path: cassian, text: "Cassian Andor" },
   },
   {
     id: 5,
     character: "Luthen Rael",
-    img: { path: luthen },
+    img: { path: luthen, text: "Luthen Rael" },
   },
 ];
-
-
