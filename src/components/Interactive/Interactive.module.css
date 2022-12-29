@@ -1,6 +1,7 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .container {
+    position: relative;
     background-color: black;
     width: 100%;
     height: 100%;
@@ -15,7 +16,7 @@
     margin: 8px;
     margin-bottom: 8px;
   }
-  
+
   .wrapper-img1 {
     width: 70%;
     height: 80vh;
@@ -37,36 +38,50 @@
     padding-left: 5px;
   }
 
- 
   .lateral {
     width: 70%;
     flex-direction: column;
     justify-content: right;
     align-items: center;
-    margin: 50px;
-    margin-top: 10px;
+    margin-top: 2px;
   }
   .img2 {
     width: 35%;
   }
   .wrapper-img2 {
+    position: relative;
+    display: flex;
     width: 100%;
     height: 20vh;
-    display: flex;
+    margin-top: 25px;
     background-color: rgb(29, 30, 31);
     border-radius: 5px;
-    margin: 10px ;
+    margin: 10px;
+    margin-left: 60px;
   }
   .wrapper-img3 {
-    width: 100%;
-    height: 20vh;
-    margin-top: 20px;
+    position: absolute;
     display: flex;
+    width: 70%;
+    height: 20vh;
     background-color: rgb(29, 30, 31);
     border-radius: 5px;
-    margin: 10px 10px;
+    margin: 10px;
+    margin-left: 60px;
+    margin-top: 40px;
   }
-  
+  .wrapper-img4 {
+    position: absolute;
+    display: flex;
+    width: 70%;
+    height: 20vh;
+    background-color: rgb(29, 30, 31);
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 60px;
+    margin-top: 190px;
+  }
+
   .text-2 {
     color: white;
     font-size: 1rem;
@@ -75,19 +90,38 @@
     padding-bottom: 60px;
     padding-left: 5px;
   }
-  .trapecio {
+  .trapecio2 {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: -25px;
+    width: 250px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid black;
+  }
+  .trapecio3 {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 120px;
+    width: 250px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid black;
+  }
+  .trapecio4 {
     position: relative;
-    margin-left: 200px;
-    margin-top: -20px;
+    margin-left: 280px;
+    margin-top: 280px;
     width: 250px;
     min-height: -80em;
     border-right: 60px solid transparent;
     border-left: 60px solid transparent;
     border-bottom: 100px solid black;
   }
+
   .trapecio1 {
     position: absolute;
-    margin-left: 80px;
+    margin-left: 220px;
     margin-top: -20px;
     width: 250px;
     height: 0px;
@@ -99,6 +133,7 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .container {
+    position: relative;
     background-color: black;
     width: 100%;
     height: 100%;
@@ -113,7 +148,7 @@
     margin: 8px;
     margin-bottom: 8px;
   }
-  
+
   .wrapper-img1 {
     width: 70%;
     height: 80vh;
@@ -135,36 +170,47 @@
     padding-left: 5px;
   }
 
- 
   .lateral {
     width: 70%;
     flex-direction: column;
     justify-content: right;
     align-items: center;
-    margin: 50px;
-    margin-top: 10px;
+    margin-top: 2px;
   }
   .img2 {
     width: 35%;
   }
   .wrapper-img2 {
+    position: relative;
     width: 100%;
     height: 20vh;
-    display: flex;
+    margin-top: 25px;
     background-color: rgb(29, 30, 31);
     border-radius: 5px;
-    margin: 10px ;
+    margin: 10px;
+    margin-left: 60px;
   }
   .wrapper-img3 {
-    width: 100%;
+    position: absolute;
+    width: 70%;
     height: 20vh;
-    margin-top: 20px;
-    display: flex;
     background-color: rgb(29, 30, 31);
     border-radius: 5px;
-    margin: 10px 10px;
+    margin: 10px;
+    margin-left: 60px;
+    margin-top: 40px;
   }
-  
+  .wrapper-img4 {
+    position: absolute;
+    width: 70%;
+    height: 20vh;
+    background-color: rgb(29, 30, 31);
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 60px;
+    margin-top: 190px;
+  }
+
   .text-2 {
     color: white;
     font-size: 1rem;
@@ -173,19 +219,38 @@
     padding-bottom: 60px;
     padding-left: 5px;
   }
-  .trapecio {
+  .trapecio2 {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: -25px;
+    width: 250px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid black;
+  }
+  .trapecio3 {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 120px;
+    width: 250px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid black;
+  }
+  .trapecio4 {
     position: relative;
-    margin-left: 200px;
-    margin-top: -20px;
+    margin-left: 280px;
+    margin-top: 280px;
     width: 250px;
     min-height: -80em;
     border-right: 60px solid transparent;
     border-left: 60px solid transparent;
     border-bottom: 100px solid black;
   }
+
   .trapecio1 {
     position: absolute;
-    margin-left: 80px;
+    margin-left: 220px;
     margin-top: -20px;
     width: 250px;
     height: 0px;
@@ -197,6 +262,8 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .container {
+    position: relative;
+    /* display: inline-block; */
     background-color: black;
     width: 100%;
     height: 100%;
@@ -211,9 +278,11 @@
     margin: 8px;
     margin-bottom: 8px;
   }
-  
+  .cards-container {
+    display: flex;
+  }
   .wrapper-img1 {
-    width: 70%;
+    width: 50%;
     height: 80vh;
     background-color: rgb(29, 30, 31);
     border-radius: 5px;
@@ -223,21 +292,20 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
-    height: 85%;
+    height: 75%;
   }
   .text-1 {
     color: white;
+    font-size: 1rem;
     width: 100%;
     height: 15%;
     padding-bottom: 20px;
     padding-left: 5px;
   }
 
-  .cards-container {
-    display: flex;
-  }
+  
   .lateral {
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -249,7 +317,8 @@
     width: 35%;
   }
   .wrapper-img2 {
-    width: 100%;
+    position: absolute;
+    width: 50%;
     height: 20vh;
     display: flex;
     background-color: rgb(29, 30, 31);
@@ -257,15 +326,26 @@
     margin: 10px 40px;
   }
   .wrapper-img3 {
-    width: 100%;
+    position: absolute;
+    width: 50%;
     height: 20vh;
-    margin-top: 20px;
     display: flex;
     background-color: rgb(29, 30, 31);
     border-radius: 5px;
-    margin: 10px 10px;
+    margin: 10px 40px;
+    margin-top: 130px;
   }
-  
+  .wrapper-img4 {
+    position: absolute;
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    background-color: rgb(29, 30, 31);
+    border-radius: 5px;
+    margin: 10px 40px;
+    margin-top: 250px;
+  }
+
   .text-2 {
     color: white;
     font-size: 1rem;
@@ -274,10 +354,28 @@
     padding-bottom: 60px;
     padding-left: 5px;
   }
-  .trapecio {
+  .trapecio2 {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 87px;
+    width: 250px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid black;
+  }
+  .trapecio3 {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 208px;
+    width: 250px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid black;
+  }
+  .trapecio4 {
     position: relative;
-    margin-left: 270px;
-    margin-top: -20px;
+    margin-left: 180px;
+    margin-top: 330px;
     width: 250px;
     min-height: -80em;
     border-right: 60px solid transparent;
@@ -286,8 +384,8 @@
   }
   .trapecio1 {
     position: absolute;
-    margin-left: 80px;
-    margin-top: -20px;
+    margin-left: 200px;
+    margin-top: 20px;
     width: 250px;
     height: 0px;
     border-right: 60px solid transparent;
@@ -298,7 +396,6 @@
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
