@@ -1,5 +1,5 @@
 .container {
-    composes: flex-center from '../../index.css';
+    /* composes: flex-center from "../../../index.css"; */
     padding: 3em 0;
   }
   

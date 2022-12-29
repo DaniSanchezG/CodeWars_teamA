@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+@media (min-width: 1700px) {
+  body {
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_v2_96b6d74a.jpeg?region=0%2C0%2C2048%2C1600);
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    top: 0 !important;
+    min-height: 100vh;
+    left: auto !important;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

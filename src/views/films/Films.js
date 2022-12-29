@@ -1,6 +1,6 @@
 import classes from "./Films.module.css";
 import { useEffect, useState } from "react";
-import DualRing from "../../components/UI/DualRing";
+import DualRing from "../../components/UI/Spinners/DualRing";
 import FetchFilms from "../../utils/FetchFilms";
 import { Link } from "react-router-dom";
 import MovieDetails from "../MovieDetails/MovieDetails";

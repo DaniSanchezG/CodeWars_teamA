@@ -4,6 +4,7 @@ import { Route, Routes, Outlet } from "react-router-dom";
 
 
 function App() {
+  const movieId = "-NKHb9fYfE82rwSCdHPU";
   return (
     <div>
       <Routes>

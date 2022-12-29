@@ -2,9 +2,10 @@ import classes from "./MovieDetails.module.css";
 import MovieHeader from "./MovieHeader";
 import MovieInfo from "./MovieInfo";
 import MovieSelect from "./MovieSelect";
-import DualRing from "../../components/UI/DualRing";
+import DualRing from "../../components/UI/Spinners/DualRing";
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import GalleryMain from "./GalleryMain";
 
 
 function MovieDetails(props) {
@@ -49,6 +50,7 @@ function MovieDetails(props) {
           <MovieSelect />
           <MovieHeader info={movieInfo} />
           <MovieInfo info={movieInfo} />
+          <GalleryMain id={params.filmId}/>
         </>
       )}
     </div>
