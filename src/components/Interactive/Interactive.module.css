@@ -28,7 +28,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
-    height: 85%;
+    height: 75%;
   }
   .text-1 {
     color: white;
@@ -85,6 +85,8 @@
   .text-2 {
     color: white;
     font-size: 1rem;
+    margin-top:25px ;
+    margin-left:-40px ;
     width: 100%;
     height: 10vh;
     padding-bottom: 60px;
@@ -92,7 +94,7 @@
   }
   .trapecio2 {
     position: absolute;
-    margin-left: 280px;
+    margin-left: 240px;
     margin-top: -25px;
     width: 250px;
     border-right: 60px solid transparent;
@@ -101,8 +103,8 @@
   }
   .trapecio3 {
     position: absolute;
-    margin-left: 280px;
-    margin-top: 120px;
+    margin-left: 240px;
+    margin-top: 110px;
     width: 250px;
     border-right: 60px solid transparent;
     border-left: 60px solid transparent;
@@ -110,8 +112,8 @@
   }
   .trapecio4 {
     position: relative;
-    margin-left: 280px;
-    margin-top: 280px;
+    margin-left: 240px;
+    margin-top: 270px;
     width: 250px;
     min-height: -80em;
     border-right: 60px solid transparent;
@@ -121,13 +123,43 @@
 
   .trapecio1 {
     position: absolute;
-    margin-left: 220px;
-    margin-top: -20px;
+    margin-left: 180px;
+    margin-top: 15px;
     width: 250px;
     height: 0px;
     border-right: 60px solid transparent;
     border-left: 60px solid transparent;
     border-bottom: 100px solid black;
+  }
+  .neon{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    padding: .2em;
+  }
+  .neon:hover span {
+    border-color: #ffffff;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 0 5px 1px #c6ecfa;
+  }
+  
+  .neon > span {
+    margin: 0 auto;
+    border: 2px solid #5a5c5d;
+    border-radius: 0.3em;
+  }
+  
+  .neon > span:nth-child(1) {
+    padding-right: 20px;
+  }
+  .neon > span:nth-child(2) {
+    padding-right: 1px;
+    margin-left: 4px;
   }
 }
 /* Medium devices (tablets, 768px and up) */
@@ -160,7 +192,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
-    height: 85%;
+    height: 75%;
   }
   .text-1 {
     color: white;
@@ -231,7 +263,7 @@
   .trapecio3 {
     position: absolute;
     margin-left: 280px;
-    margin-top: 120px;
+    margin-top: 110px;
     width: 250px;
     border-right: 60px solid transparent;
     border-left: 60px solid transparent;
@@ -240,7 +272,7 @@
   .trapecio4 {
     position: relative;
     margin-left: 280px;
-    margin-top: 280px;
+    margin-top: 270px;
     width: 250px;
     min-height: -80em;
     border-right: 60px solid transparent;
@@ -251,7 +283,7 @@
   .trapecio1 {
     position: absolute;
     margin-left: 220px;
-    margin-top: -20px;
+    margin-top: 15px;
     width: 250px;
     height: 0px;
     border-right: 60px solid transparent;
@@ -299,7 +331,7 @@
     font-size: 1rem;
     width: 100%;
     height: 15%;
-    padding-bottom: 20px;
+    padding-bottom: -20px;
     padding-left: 5px;
   }
 
@@ -349,6 +381,8 @@
   .text-2 {
     color: white;
     font-size: 1rem;
+    margin-top: 25px;
+    margin-left: -35px;
     width: 100%;
     height: 10vh;
     padding-bottom: 60px;
@@ -385,12 +419,42 @@
   .trapecio1 {
     position: absolute;
     margin-left: 200px;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 250px;
     height: 0px;
     border-right: 60px solid transparent;
     border-left: 60px solid transparent;
     border-bottom: 100px solid black;
+  }
+  .neon{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    padding: .2em;
+  }
+  .neon:hover span {
+    border-color: #ffffff;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 0 5px 1px #c6ecfa;
+  }
+  
+  .neon > span {
+    margin: 0 auto;
+    border: 2px solid #5a5c5d;
+    border-radius: 0.3em;
+  }
+  
+  .neon > span:nth-child(1) {
+    padding-right: 20px;
+  }
+  .neon > span:nth-child(2) {
+    padding-right: 1px;
+    margin-left: 4px;
   }
 }
 
