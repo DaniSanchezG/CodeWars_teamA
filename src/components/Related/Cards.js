@@ -2,6 +2,8 @@
 import classes from "./Cards.module.css";
 
 //Components
+import DataItems from "./DataItems";
+
 // import ButtonNeon from "../UI/Buttons/ButtonNeon";
 
 //Datas
@@ -9,9 +11,8 @@ import classes from "./Cards.module.css";
 
 //Hooks
 import { useState, useEffect } from "react";
-import DataItems from "./DataItems";
 
-function Cards(props) {
+function Cards() {
   const [cards, setCards] = useState({});
   const [pending, setPending] = useState(false);
   const [error, setError] = useState("");
@@ -37,6 +38,7 @@ function Cards(props) {
         message: error.message || "Something went wrong",
       });
     }
+
     setPending(false);
   };
 
@@ -45,37 +47,17 @@ function Cards(props) {
   }, []);
 
   return (
-    // <>
-    //   <section className={classes.related}>
-    //     <ul>
-    //       {datas.map((data) => {
-    //         return (
-    //           <li key={data.id} character={data.character} img={data.img}>
-    //             <div className={classes["cards-container"]}>
-    //               <img src={data.img.path} alt={data.img.text} />
-    //               <div className={classes["characters-container"]}>
-    //                 {/* <ButtonNeon /> */}
-    //                 <div className={classes["content-info"]}>
-    //                   <h3>{data.character}</h3>
-    //                 </div>
-    //               </div>
-    //             </div>
-    //           </li>
-    //         );
-    //       })}
-    //     </ul>
-    //   </section>
-    // </>
     <>
       <section className={classes.related}>
         <ul>
           {Object.keys(cards).map((key, index) => {
+            // console.log(cards);
             return (
-              <DataItems 
-              key={index}
-              id={cards[key].id}
-              character={cards[key].character}
-              img={cards[key].img}
+              <DataItems
+                key={index}
+                id={cards[key].id}
+                character={cards[key].character}
+                img={cards[key].img}
               />
             );
           })}

@@ -7,7 +7,7 @@ body {
 
 /*Etiqueta section, elemento contenedor principal*/
 .related {
-  padding: .2em 1.5em;
+  padding: 1em 1.5em;
 }
 
 /*Elemento contenedor para la el componente Cards*/
@@ -28,13 +28,14 @@ body {
 /*Para especificar el ancho de la Cards en la vista movile*/
 .related > ul li {
   width: 50%;
-}
+}  /* display: flex;
+flex-wrap: wrap; */  /* display: flex;
+  flex-wrap: wrap; */  /* display: flex;
+  flex-wrap: wrap; */
 
 /*Para dar anchura, redondear bordes y cursor*/
 .cards-container img {
   width: 100%;
-  /* display: flex;
-  flex-wrap: wrap; */
   border-top-left-radius: 0.6em;
   border-top-right-radius: 0.6em;
   cursor: pointer;

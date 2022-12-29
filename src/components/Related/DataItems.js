@@ -1,3 +1,4 @@
+//CSS
 import classes from "./Cards.module.css";
 
 function DataItems(props) {
