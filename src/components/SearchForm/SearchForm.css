@@ -10,9 +10,9 @@
   outline: none;
   border: none;
   border-radius: 5px 0px 0px 5px;
-  background-color: var(--grey-dark);
+  background-color: #242424;
   font-size: 1rem;
-  color: var(--white);
+  color:#fff;
 }
 
 .search__input:focus {
@@ -21,31 +21,31 @@
 
 .search__button {
   height: 40px;
-  background-color: var(--grey-dark);
+  background-color: #242424;
   border-radius: 0px 5px 5px 0px;
 }
 
 .search__button ion-icon {
-  color: var(--grey-color);
+  color: #7a7a7a;
   font-size: 26px;
 }
 
 .search__input:focus + .search__button {
   filter: brightness(120%);
 }
-
+/* SIGN IN CSS */
 .button-group {
   width: fit-content;
   margin-top: 1.5em;
   margin-left: auto;
-  color: var(--grey-dark);
+  color: #242424;
   font-size: 0.9rem;
   font-weight: bold;
 }
 
 .login__button {
   background-color: #000;
-  color: var(--grey-color);
+  color: #7a7a7a;
   font-size: 0.9rem;
   font-weight: bold;
   border: none;
@@ -55,30 +55,6 @@
 
 .login__button:hover,
 .login__button:focus {
-  color: var(--white);
+  color:#fff;
 }
 
-.login__status {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8em 0.2em;
-}
-
-.login__user {
-  width: 150px;
-  display: flex;
-  align-items: center;
-}
-
-.login__user ion-icon {
-  padding-top: 5px;
-  font-size: 30px;
-}
-
-.login__user span:nth-child(2) {
-  padding-top: 2px;
-  padding-left: 5px;
-  text-align: left;
-  overflow-x: hidden;
-}

@@ -1,8 +1,16 @@
 import { NavLink } from "react-router-dom"
 import './Nav.css'
+import NavMobile from '../NavMobile/Burger'
+import React from 'react';
+// import styled from 'styled-components';
+// import Burger from '../Nav/Burger';
 
 export default function Nav ({ logged }) {
   return (
+    <>
+    {/* Imported NavMobile out side the nav list */}
+    <NavMobile /> 
+
     <nav className="nav">
       <ul aria-label="menu" className="nav__links" id="links">
         <li className="nav__link">
@@ -46,5 +54,6 @@ export default function Nav ({ logged }) {
         
       </ul>
     </nav>
+    </>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-// import LeftNav from './LeftNav';
+import LeftNav from './LeftNav';
+// import Nav from '../Nav/Nav';
 
 const StyledBurger = styled.div`
   width: 2rem;
@@ -8,7 +9,7 @@ const StyledBurger = styled.div`
   position: fixed;
   top: 15px;
   left: 20px;  
-  z-index: 20;
+  z-index: 200;
   display: none;
   @media (max-width: 768px) {
     display: flex;
@@ -45,7 +46,8 @@ const Burger = () => {
         <div />
         <div />
       </StyledBurger>
-      {/* <LeftNav open={open}/> */}
+      <LeftNav open={open}/>
+      
     </>
   )
 }

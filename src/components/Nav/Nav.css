@@ -2,7 +2,7 @@
   position: fixed;
   top: 134px;
   width: 100%;
-  background-color: var(--black);
+  background-color: #000;
   z-index: 20;
 }
 
@@ -10,7 +10,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #333;
 }
 
 .nav__link {
@@ -49,9 +49,13 @@
 }
 
 .nav__link a:hover {
-  color: var(--white);
+  color: #fff;
 }
 
 .disabled:hover + .nav__message {
   opacity: 1;
+}
+a {
+  color: #7a7a7a;
+  text-decoration: none;
 }

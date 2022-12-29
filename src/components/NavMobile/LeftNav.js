@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+// import Nav from '../Nav/Nav';
+import { NavLink } from "react-router-dom"
+
 
 const Ul = styled.ul`
   list-style: none;
@@ -28,17 +31,48 @@ const Ul = styled.ul`
 const LeftNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>HOME</li>
-      <li>VIDEOS</li>
-      <li>FILMS</li>
-      <li>SERIES</li>
-      <li>INTERACTIVE</li>
-      <li>COMMUNITY</li>
-      <li>DATABANK</li>
-      <li>CODE+</li>
-      {/* <li>Sign In</li>
-      <li>Sign Up</li> */}
-    </Ul>
+    
+        <li className="nav__link">
+          <NavLink exact to="/">HOME</NavLink>
+          <span className="nav__link-bar nav__link-bar--yellow"></span>
+        </li>
+        <li className="nav__link">
+          <NavLink exact to="/video">VIDEO</NavLink>
+          <span className="nav__link-bar nav__link-bar--yellow"></span>
+        </li>
+        <li className="nav__link">
+          <NavLink exact to="/films">FILMS</NavLink>
+          <span className="nav__link-bar nav__link-bar--yellow"></span>
+        </li>
+        <li className="nav__link">
+          <NavLink to="/series">SERIES</NavLink>
+         
+          <span className="nav__link-bar nav__link-bar--yellow"></span>
+        </li>
+        <li className="nav__link">
+          <NavLink to="/interactive">INTERACTIVE</NavLink>
+         
+          <span className="nav__link-bar nav__link-bar--yellow"></span>
+        </li>
+        <li className="nav__link">
+          <NavLink to="/community">COMMUNITY</NavLink>
+         
+          <span className="nav__link-bar nav__link-bar--yellow"></span>
+        </li>
+        <li className="nav__link">
+          <NavLink to="/databank">DATABANK</NavLink>
+         
+          <span className="nav__link-bar nav__link-bar--yellow"></span>
+        </li>
+        
+        <li className="nav__link">
+          <NavLink to="/code+">CODE+</NavLink>
+         
+          <span className="nav__link-bar nav__link-bar--yellow"></span>
+        </li>
+
+   </Ul>
+
   )
 }
 

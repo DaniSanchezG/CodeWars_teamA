@@ -6,7 +6,7 @@
 
 .social__links {
   display: flex;
-  border-right: 1px solid var(--grey-color);
+  border-right: 1px solid #7a7a7a;
 }
 
 .social__icon {
@@ -18,19 +18,19 @@
 }
 
 .social__icon ion-icon {
-  color: var(--white);
+  color: #fff;
   font-size: 26px;
   transition: color 0.8s ease;
 }
 
 .social__icon ion-icon:hover {
-  color: var(--grey-color);
+  color: #7a7a7a;
 }
 
 .social__kids {
   width: 50px;
   height: 17px;
-  background-color: var(--white);
+  background-color: #fff;
   margin-left: 1.2em;
   padding: 0 0.5em;
   border-radius: 10px;
@@ -41,5 +41,5 @@
 }
 
 .social__kids:hover {
-  background-color: var(--grey-color);
+  background-color: #7a7a7a;
 }
