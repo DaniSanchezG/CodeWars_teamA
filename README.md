@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+[![Banner-Code.png](https://i.postimg.cc/G25Hq41B/Banner-Code.png)](https://postimg.cc/WF0N4bzj)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ButtonNeon
+Este componente muestra un botón con un efecto neón. Al hacer hover sobre él, los bordes del botón se iluminan y aparece una sombra alrededor.
+## Uso
+Para utilizar este componente basta con importarlo y renderizarlo en tu código:
 
-## Available Scripts
+# GalleryItem
 
-In the project directory, you can run:
+Este componente muestra cada uno de los elementos de la galería de imágenes. Se compone de una imagen, un título y una descripción. Al hacer hover sobre el componente, se activa el efecto neon en el botón de visualizar galería.
 
-### `npm start`
+## Propiedades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   `image`: la ruta de la imagen a mostrar en el componente.
+-   `title`: el título de la galería.
+-   `description`: la descripción de la galería.
+-   `number_images`: el número de imágenes que contiene la galería.
+-   `id`: el identificador de la galería.
+# GalleryMain
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Este componente es un contenedor que muestra una galería de imágenes con información adicional. Cada imagen es una instancia del componente `GalleryItem`.
 
-### `npm test`
+## Propiedades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   `id`: una cadena de texto que determina qué imágenes deben mostrarse en la galería.
 
-### `npm run build`
+## Funcionamiento
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Este componente es un contenedor para mostrar una lista de elementos de galería a través de la importación del componente `GalleryItem`. Al inicio, se hace una solicitud HTTP a la dirección URL especificada para obtener los datos de la galería. Mientras se espera la respuesta de la solicitud, se muestra un spinner de carga. Si la solicitud tiene éxito, se procesa la respuesta y se muestra cada elemento de la galería en pantalla a través del componente `GalleryItem`. Si la solicitud falla, se muestra un mensaje de error.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Este componente toma una propiedad de entrada llamada `id`, que se pasa al método `showGalleryItems` y se utiliza para filtrar los elementos de la galería que se deben mostrar. Si no se proporciona un `id`, se muestran todos los elementos de la galería.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este componente utiliza el estado de React para almacenar los datos de la galería, el estado de carga pendiente y el mensaje de error en caso de que la solicitud falla. También utiliza el hook de efecto de React para realizar la solicitud HTTP y actualizar el estado en consecuencia.
