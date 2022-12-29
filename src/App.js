@@ -1,13 +1,12 @@
+import MovieDetails from "./views/MovieDetails";
 import classes from "./App.module.css";
-import Buttons from "./components/UI/Buttons/Buttons";
-import GalleryMain from "./views/GalleryMain";
 
 function App() {
-
+  const movieId = "-NKHb9fYfE82rwSCdHPU";
   return (
-    <>
-      <Buttons id="-NKIC1LzTGmpnhP22R4l"/>
-    </>
+    <div className={classes.container}>
+      <MovieDetails id={movieId} />
+    </div>
   );
 }
 

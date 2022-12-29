@@ -1,4 +1,4 @@
-import classes from "./ButtonNeon.module.css";
+import classes from "./ButtonNeonGallery.module.css";
 import { useState,useEffect } from "react";
 
 const ButtonNeon = ({ onHover }) => {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ButtonNeon from "../UI/Buttons/ButtonNeon";
+import ButtonNeonGallery from "../UI/Buttons/ButtonNeonGallery";
 import classes from "./GalleryItem.module.css";
 
 function GalleryItem({ image, title, description, number_images, id }) {
@@ -13,7 +13,7 @@ function GalleryItem({ image, title, description, number_images, id }) {
     >
       <img src={image} alt={title} />
       <div className={classes["item-info"]}>
-        <ButtonNeon onHover={isHovered} />
+        <ButtonNeonGallery onHover={isHovered} />
         <h2>
           {title} 
           <p>{description}</p>
