@@ -3,14 +3,13 @@ import classes from "./Cards.module.css";
 
 //Components
 import DataItems from "./DataItems";
-
 // import ButtonNeon from "../UI/Buttons/ButtonNeon";
-
-//Datas
-// import { datas } from "../../db/datas.json";
 
 //Hooks
 import { useState, useEffect } from "react";
+
+const FETCH_DATAS =
+  "https://datacards-ff456-default-rtdb.europe-west1.firebasedatabase.app/datas.json";
 
 function Cards() {
   const [cards, setCards] = useState({});
@@ -22,9 +21,7 @@ function Cards() {
       setPending(true);
       setPending(null);
 
-      const response = await fetch(
-        "https://datacards-ff456-default-rtdb.europe-west1.firebasedatabase.app/datas.json"
-      );
+      const response = await fetch(FETCH_DATAS);
 
       // console.log(response);
 

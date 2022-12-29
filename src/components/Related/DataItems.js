@@ -1,5 +1,6 @@
 //CSS
 import classes from "./Cards.module.css";
+import ButtonNeon from "../UI/Buttons/ButtonNeon";
 
 function DataItems(props) {
   return (
@@ -7,7 +8,7 @@ function DataItems(props) {
       <div className={classes["cards-container"]}>
         <img src={props.img} />
         <div className={classes["characters-container"]}>
-          {/* <ButtonNeon /> */}
+          <ButtonNeon/>
           <div className={classes["content-info"]}>
             <h3>{props.character}</h3>
           </div>

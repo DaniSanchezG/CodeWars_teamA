@@ -14,7 +14,7 @@ body {
 .cards-container {
   width: 100%;
   height: auto;
-  padding: .9em;
+  padding: 0.9em;
 }
 
 /*Para dar movimiento a la Cards */
@@ -28,10 +28,7 @@ body {
 /*Para especificar el ancho de la Cards en la vista movile*/
 .related > ul li {
   width: 50%;
-}  /* display: flex;
-flex-wrap: wrap; */  /* display: flex;
-  flex-wrap: wrap; */  /* display: flex;
-  flex-wrap: wrap; */
+}
 
 /*Para dar anchura, redondear bordes y cursor*/
 .cards-container img {
@@ -42,7 +39,7 @@ flex-wrap: wrap; */  /* display: flex;
 }
 
 .cards-container .characters-container {
-  background-color:#323333;
+  background-color: #1d1e1f;
   border-bottom-left-radius: 0.6em;
   border-bottom-right-radius: 0.6em;
   margin-top: -0.5em;
@@ -53,18 +50,19 @@ flex-wrap: wrap; */  /* display: flex;
   padding-bottom: 4em;
 }
 
-.cards-container .content-info h3 {
+.cards-container h3 {
+  font-family: "Cabin", sans-serif;
   font-size: 1.4em;
   color: #ffffff;
   cursor: pointer;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .related {
-    margin: .2em 1.7em;
-  } 
+    margin: 0.2em 1.7em;
+  }
   .related > ul {
     justify-content: space-around;
   }
@@ -83,8 +81,8 @@ flex-wrap: wrap; */  /* display: flex;
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1140px) {
   .related {
-    margin: -.5em 4.7em;
-  } 
+    margin: -0.5em 4.7em;
+  }
   .related > ul {
     justify-content: space-between;
   }
