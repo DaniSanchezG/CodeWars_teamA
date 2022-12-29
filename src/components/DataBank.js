@@ -1,7 +1,8 @@
 import classes from "./DataBank.module.css";
-import charactersdb from "../db/charactersdb.json";
+//import charactersdb from "../db/charactersdb.json";
 import DataBankCards from "./DataBankCards";
-import { useState } from "react";
+
+//import { useState } from "react";
 
 function DataBank() {
   return (
@@ -34,8 +35,8 @@ function DataBank() {
         <div className={classes["cards-container-title"]}>
           <h2>Andor</h2>
         </div>
-        {/* <DataBankCards items={characters} /> */}
-        <ul className={classes["cards-wrapper-ul"]}>
+        <DataBankCards  />
+        {/* <ul className={classes["cards-wrapper-ul"]}>
           {charactersdb.map((character, index) => {
             return (
               <li
@@ -54,7 +55,7 @@ function DataBank() {
               </li>
             );
           })}
-        </ul>
+        </ul> */}
         <div className={classes["show-more"]}>
           <a href="#Home" className={classes["show-more-button"]}>
             SHOW MORE

@@ -1,125 +1,152 @@
+/* contenedro de TODAS las card */
+.cards-wrapper-ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 5px;
+}
 /* contenerdor de la card */
 .card-li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #1d1e1f;
+  border-radius: 6px;
+}
+.card-li img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Zona del nombre del personaje */
+.card-info {
+  padding: 6px 0;
+  height: 10vh;
+  width: 100%;
+  background-color: #1d1e1f;
+}
+/* Nombre del personaje */
+.card-info span {
+  color: white;
+  font-family: "DINNext", "Rubik", sans-serif;
+  cursor: pointer;
+  padding: 0 4px;
+}
+/* Barra y punto entre foto y nombre del personaje */
+.card-decal {
+  position: relative;
+  padding-bottom: 10px;
+}
+/* para que card-decal haga hover al entrar en cualquier parte de la card */
+.card-li:hover .card-decal::after {
+  box-shadow: 0px 0px 4px 1px #c6ecfa;
+  background-color: #fff;
+  transition: 200ms ease-in-out;
+}
+.card-li:hover .card-decal::before {
+  box-shadow: 0px 0px 4px 1px #c6ecfa;
+  background-color: #fff;
+  transition: 200ms ease-in-out;
+}
+/* efecto hover de .card-decal */
+.card-decal::before {
+  position: absolute;
+  content: "";
+  background-color: #5a5c5d;
+  height: 4px;
+  width: 4px;
+  z-index: 2;
+  left: 32px;
+  border-radius: 4px;
+}
+.card-decal::after {
+  position: absolute;
+  content: "";
+  background-color: #5a5c5d;
+  height: 4px;
+  width: 24px;
+  border-radius: 4px;
+  left: 4px;
+  z-index: 2;
+}
+/* border inferior con muesca negra */
+span.border-bottom::before {
+  float: left;
+  border-right: 12px solid transparent;
+  width: 30%;
+  border-top: 12px solid #1d1e1f;
+  content: "";
+  border-bottom-left-radius: 6px;
+}
+.border-bottom-container {
+  display: inline;
+  width: 100%;
+  background-color: black !important;
+}
+.half-bottom-card{
+  background-color: black;
+}
+span.border-bottom::after {
+  float: right;
+  border-left: 12px solid transparent;
+  width: 30%;
+  border-top: 12px solid #1d1e1f;
+  content: "";
+  border-bottom-right-radius: 6px;
+}
+
+@media (max-width: 767px) {
+  .card-decal {
+    visibility: collapse;
+  }
+  .cards-wrapper-ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card-li {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-color: #1d1e1f;
     border-radius: 6px;
-  }
-  .card-li img {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    width: 100%;
-    height: 100%;
-  }
   
-  /* Zona del nombre del personaje */
+  }
   .card-info {
     padding: 6px 0;
-    height: 10vh;
+    height: 100%;
     width: 100%;
   }
-  /* Nombre del personaje */
-  .card-info span {
-    color: white;
-    font-family: "DINNext", "Rubik", sans-serif;
-    cursor: pointer;
-    padding: 0 4px;
+  .half-bottom-card{
+display: flex;
+flex-direction: column;
   }
-  /* Barra y punto entre foto y nombre del personaje */
-  .card-decal {
-    position: relative;
-    padding-bottom: 10px;
-  }
-  /* para que card-decal haga hover al entrar en cualquier parte de la card */
-  .card-li:hover .card-decal::after {
-    box-shadow: 0px 0px 4px 1px #c6ecfa;
-    background-color: #fff;
-    transition: 200ms ease-in-out;
-  }
-  .card-li:hover .card-decal::before {
-    box-shadow: 0px 0px 4px 1px #c6ecfa;
-    background-color: #fff;
-    transition: 200ms ease-in-out;
-  }
-  /* efecto hover de .card-decal */
-  .card-decal::before {
-    position: absolute;
-    content: "";
-    background-color: #5a5c5d;
-    height: 4px;
-    width: 4px;
-    z-index: 2;
-    left: 32px;
-    border-radius: 4px;
-  }
-  .card-decal::after {
-    position: absolute;
-    content: "";
-    background-color: #5a5c5d;
-    height: 4px;
-    width: 24px;
-    border-radius: 4px;
-    left: 4px;
-    z-index: 2;
-  }
-  /* border inferior con muesca negra */
-  span.border-bottom::before {
-    float: left;
-    border-right: 12px solid transparent;
-    width: 30%;
-    border-top: 12px solid #1d1e1f;
-    content: "";
-    border-bottom-left-radius: 6px;
-  }
-  .border-bottom-container {
-    display: inline;
-    width: 100%;
-    background-color: black;
-  }
-  
-  span.border-bottom::after {
-    float: right;
-    border-left: 12px solid transparent;
-    width: 30%;
-    border-top: 12px solid #1d1e1f;
-    content: "";
-    border-bottom-right-radius: 6px;
-  }
-  /* boton show more */
-  .show-more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 12px auto 24px;
-  }
-  /* boton */
-  .show-more-button {
-    position: relative;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid #fade4b;
-    border-radius: 20px;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 5px 40px 2px 16px;
-  }
-  .show-more-button:hover {
-    border: 1px solid #fff;
-    transition: 200ms ease-in-out;
-  }
-  /* flecha de la derecha */
-  .show-more-button::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    right: 14px;
-    width: 20px;
-    height: 20px;
-    background: url(https://static-mh.content.disney.io/matterhorn/assets/starwars/utility/arrows/more_down-0165de1514f4.svg)
-      center no-repeat;
-  }
-  @media (min-width: 768px) {}
+  /* border inferior con muesca negra
+span.border-bottom::before {
+  float: left;
+  border-right: 12px solid transparent;
+  width: 30%;
+  border-top: 12px solid #1d1e1f;
+  content: "";
+  border-bottom-left-radius: 6px;
+}
+.border-bottom-container {
+  display: inline;
+  width: 100%;
+  background-color: black;
+}
+
+span.border-bottom::after {
+  float: right;
+  border-left: 12px solid transparent;
+  width: 30%;
+  border-top: 12px solid #1d1e1f;
+  content: "";
+  border-bottom-right-radius: 6px;
+} */
+
+}
