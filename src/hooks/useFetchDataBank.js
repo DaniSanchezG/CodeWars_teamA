@@ -11,7 +11,7 @@ const useFetchDataBank = () => {
       setPending(true);
       setError(null);
       let response = null;
-      const URL = 'https://characters-206d3-default-rtdb.europe-west1.firebasedatabase.app/';
+      const URL = 'https://characters-206d3-default-rtdb.europe-west1.firebasedatabase.app/characters.json ';
 
       if (method === 'DELETE') {
         response = await fetch(URL + '/tasks/' + task.id + '.json', { method });

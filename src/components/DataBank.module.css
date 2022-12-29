@@ -1,4 +1,5 @@
 .data-bank {
+  /* font-family: family=Cabin:wght@400;500;600;700; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,7 +97,8 @@ svg.icon {
 .cards-wrapper-ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 20px;
+  padding: 20px;
 }
 /* contenerdor de la card */
 .card-li {

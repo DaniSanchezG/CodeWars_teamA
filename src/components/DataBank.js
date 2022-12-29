@@ -1,7 +1,9 @@
 import classes from "./DataBank.module.css";
 import charactersdb from "../db/charactersdb.json";
+import DataBankCards from "./DataBankCards";
+import { useState } from "react";
 
-function DataBank(props) {
+function DataBank() {
   return (
     <section className={classes["data-bank"]}>
       <div className={classes["title-bank"]}>
@@ -32,6 +34,7 @@ function DataBank(props) {
         <div className={classes["cards-container-title"]}>
           <h2>Andor</h2>
         </div>
+        {/* <DataBankCards items={characters} /> */}
         <ul className={classes["cards-wrapper-ul"]}>
           {charactersdb.map((character, index) => {
             return (
@@ -53,8 +56,8 @@ function DataBank(props) {
           })}
         </ul>
         <div className={classes["show-more"]}>
-          <a href="#" className={classes["show-more-button"]}>
-          SHOW MORE
+          <a href="#Home" className={classes["show-more-button"]}>
+            SHOW MORE
           </a>
         </div>
       </div>
@@ -62,5 +65,4 @@ function DataBank(props) {
   );
 }
 
-console.log(charactersdb.id);
 export default DataBank;
