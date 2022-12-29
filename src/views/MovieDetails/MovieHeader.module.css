@@ -1,0 +1,142 @@
+/* main movie banner with gradient */
+.movie-banner-container {
+  position: relative;
+  transition: opacity 250ms, padding-bottom 250ms;
+  margin-bottom: 10em;
+}
+
+.movie-banner-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-banner-container .gradient-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  background: linear-gradient(
+    180deg,
+    #00000000 0%,
+    #0000000a 16%,
+    #00000021 29%,
+    #00000042 41%,
+    #0000006b 51%,
+    #00000094 61%,
+    #000000bd 70%,
+    #000000de 79%,
+    #000000f5 89%,
+    #000000ff 100%
+  );
+}
+
+.banner-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-title h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.2;
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+}
+
+/* yellow button stream on code+ */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stream-button {
+  background-color: #fade4b;
+  padding: 1.2em 2em;
+  border-radius: 1.8rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  z-index: 5;
+  position: absolute;
+  bottom: -70px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 540px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .movie-banner-container .gradient-background {
+    background: linear-gradient(
+      270deg,
+      #00000000 0%,
+      #0000000a 16%,
+      #00000021 29%,
+      #00000042 41%,
+      #0000006b 51%,
+      #00000094 61%,
+      #000000bd 70%,
+      #000000de 79%,
+      #000000f5 89%,
+      #000000ff 100%
+    );
+  }
+
+  .banner-title h2 {
+    font-size: 2rem;
+    bottom: -40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stream-button {
+    bottom: -110px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner-title h2 {
+    left: 80px;
+    bottom: 140px;
+    width: 30%;
+  }
+
+  .stream-button {
+    bottom: 60px;
+    left: 130px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .banner-title h2 {
+    width: 35%;
+    font-size: 2.1rem;
+  }
+
+  .stream-button {
+    bottom: 60px;
+    left: 200px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .movie-banner-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .stream-button {
+    bottom: 60px;
+    left: 270px;
+  }
+}

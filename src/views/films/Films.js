@@ -3,10 +3,13 @@ import { useEffect, useState } from "react";
 import DualRing from "../../components/UI/DualRing";
 import FetchFilms from "../../utils/FetchFilms";
 import { Link } from "react-router-dom";
+import MovieDetails from "../MovieDetails/MovieDetails";
+
 
 function Films() {
   const { orderedFilms, isLoading, error, data } = FetchFilms();
   const [refresh, setRefresh] = useState(true);
+
 
   const fetch = data;
 
@@ -49,9 +52,13 @@ function Films() {
             <>
               {Object.keys(orderedFilms).map((film) => (
                 <Link
+                  id={film}
                   key={film}
-                  to={`films/${orderedFilms[film].title.replaceAll(" ", "-")}`}
+                  // to={`/films/${orderedFilms[film].title.replaceAll(" ", "-")}`}
                   className={classes["film-link"]}
+                  to={`/films/${orderedFilms[film].movieId}`}
+                  // element={<MovieDetails id={orderedFilms[film].movieId}
+                  // />}
                 >
                   <div key={film} className={classes.film}>
                     <img src={orderedFilms[film].imgFilm} alt={orderedFilms[film].title} />
