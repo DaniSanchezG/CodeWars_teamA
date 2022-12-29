@@ -50,6 +50,7 @@
 
 .link-container {
   margin-top: 1.5em;
+  margin-bottom: 4em;
 }
 
 .rating-link {
@@ -149,8 +150,17 @@
     grid-template-columns: 40% 60%;
   }
 
+  .description-container {
+    margin-right: 15%;
+  }
+
+  .text-container {
+    font-size: 1.25rem;
+  }
+
   .main-info-container h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
+    margin-right: 10%;
   }
 
   .main-info-container p {

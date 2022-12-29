@@ -10,7 +10,7 @@ function MovieDetails(props) {
   const [pending, setPending] = useState(false);
   const [error, setError] = useState("");
 
-  const fetchMovieInfo = async (id = "-NKHji9mdD7Z16_HZhAf") => {
+  const fetchMovieInfo = async (id) => {
     try {
       setPending(true);
       setError(null);
@@ -53,9 +53,3 @@ function MovieDetails(props) {
 }
 
 export default MovieDetails;
-
-// <MovieSelect />
-// <Suspense fallback={<DualRing />}>
-//   <MovieHeader info={movieInfo} />
-//   <MovieInfo info={movieInfo} />
-// </Suspense>
