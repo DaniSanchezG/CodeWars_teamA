@@ -22,7 +22,14 @@ function MovieSelect() {
         </h2>
       </div>
       <div className={classes["select-container"]} onClick={handleOpen}>
-        <h3 className={classes["select-container-title"]}>ALL FILMS</h3>
+        <h3 className={classes["select-container-title"]}>ALL FILMS
+        <span className={
+            isOpened
+              ? classes["arrow-img-rotate"]
+              : classes["arrow-img"]
+          }><img src="https://static-mh.content.disney.io/matterhorn/assets/starwars/navigation/SW_Nav_Mobile_Arrow_Down_White-248b16ea1997.svg"/></span>
+        </h3>
+        
         <div
           className={
             isOpened
