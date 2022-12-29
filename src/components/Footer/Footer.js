@@ -1,9 +1,11 @@
 import classes from "./Footer.module.css";
+import footer from "../../assets/img/footer.jpg"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
   return (
     <section className={classes["container"]}>
+        <img src={footer} className={classes["img-footer"]}/>
       <footer>
         <div className={classes["container-icons"]}>
           <p>More from Code Wars:</p>
