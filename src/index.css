@@ -16,6 +16,8 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  /* Quitar antes de hacer push */
+  background-color: black;
 }
 
 h1,

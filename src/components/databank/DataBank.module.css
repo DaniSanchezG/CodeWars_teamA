@@ -1,0 +1,147 @@
+.data-bank {
+  /* font-family: family=Cabin:wght@400;500;600;700; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* titulo inicial */
+.title-bank {
+  color: white;
+  padding: 9px 0 8px;
+}
+.title-bank h3 {
+  padding: 8px 0;
+}
+/* contenedor de toda la barra de busqueda */
+.search-container {
+  color: #CFD3DB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  background-color: #1d1e1f;
+  padding: 10px 44px 10px 10px;
+  height: 64px;
+  line-height: 24px;
+  font-size: 1.7rem;
+}
+/* campo de busqueda */
+.search-field {
+  width: 90%;
+  background-color: transparent;
+  border-bottom: 1.5px solid black;
+  line-height: 24px;
+}
+.search-field::placeholder {
+font-weight: bolder;
+font-size: 1.7rem;
+color: #B4B7BD;
+}
+.search-bank {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* icono de busqueda */
+svg.icon {
+  color: white;
+  fill: currentColor;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+/* hover del icono de busqueda */
+.search-bank:hover svg.icon{
+  filter: drop-shadow(0px 0px 4px #c6ecfa);
+  transition: border linear 250ms, box-shadow linear 250ms;
+}
+.fa-magnifying-glass {
+  color: white;
+}
+.cards-container {
+  width: 100%;
+  padding: 24px 48px 0 48px;
+}
+/* Titulo superior debajo de la barra de búsqueda, hago after y before para conseguir la linea gris */
+.cards-container-title::before {
+  position: absolute;
+  content: "";
+  background-color: #5a5c5d;
+  height: 2px;
+  width: 4px;
+  left: 0px;
+  border-radius: 2px;
+  bottom: 0px;
+}
+/* Titulo Andor y linea de abajo creada con after y before */
+.cards-container-title {
+  color: white;
+  position: relative;
+  text-align: left;
+  margin-bottom: 20px;
+}
+/* Linea debajo de ANDOR */
+.cards-container-title::after {
+  left: 8px;
+  width: calc(100% - 8px);
+  content: "";
+  background-color: #5a5c5d;
+  height: 2px;
+  position: absolute;
+  border-radius: 2px;
+  bottom: 0px;
+}
+.border-bottom-container {
+  display: inline;
+  width: 100%;
+  background-color: black;
+}
+
+span.border-bottom::after {
+  float: right;
+  border-left: 12px solid transparent;
+  width: 30%;
+  border-top: 12px solid #1d1e1f;
+  content: "";
+  border-bottom-right-radius: 6px;
+}
+/* boton show more */
+.show-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 12px auto 24px;
+}
+/* boton */
+.show-more-button {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #fade4b;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5px 40px 2px 16px;
+}
+.show-more-button:hover {
+  border: 1px solid #fff;
+  transition: 200ms ease-in-out;
+}
+/* flecha de la derecha */
+.show-more-button::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 14px;
+  width: 20px;
+  height: 20px;
+  background: url(https://static-mh.content.disney.io/matterhorn/assets/starwars/utility/arrows/more_down-0165de1514f4.svg)
+    center no-repeat;
+}
+@media (min-width: 768px) {
+  
+}

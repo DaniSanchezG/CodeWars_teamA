@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "character": "Stekan Sculdun",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/runai-sculdun-main_92a216b8.jpeg?region=617%2C211%2C593%2C593"
+  },
+  {
+    "id": 2,
+    "character": "Runai Sculdun",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/runai-sculdun-main_92a216b8.jpeg?region=80%2C63%2C700%2C700"
+  },
+  {
+    "id": 3,
+    "character": "Imperial Security Trooper",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/imperial-security-trooper-main_1aa57c94.jpeg?region=558%2C0%2C804%2C804"
+  },
+  {
+    "id": 4,
+    "character": "Ferrix Funerary Stone",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/ferriz-funerary-stone-main_4694bf08.jpeg?region=647%2C0%2C806%2C803"
+  },
+  {
+    "id": 5,
+    "character": "Freedi Pamular",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/freddi-pamular-main_d3e9ec64.jpeg?region=847%2C0%2C806%2C803"
+  },
+  {
+    "id": 6,
+    "character": "Dewi Pamular",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/dewi-pamular-main_534f5bad.jpeg?region=943%2C1%2C807%2C803"
+  },
+  {
+    "id": 7,
+    "character": "Captain Elk",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/captain-elk-main_a226514b.jpeg?region=558%2C0%2C804%2C804"
+  },
+  {
+    "id": 8,
+    "character": "Jezzi",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/jezzi-main_9a110509.jpeg?region=443%2C1%2C807%2C803"
+  },
+  {
+    "id": 9,
+    "character": "Davo Sculdun",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/davo-sculdun-main_f1254e40.jpeg?region=810%2C0%2C807%2C803"
+  },
+  {
+    "id": 10,
+    "character": "Benthic Two Tubes",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/benthic-two-tubes-main_2dc38388.jpeg?region=540%2C47%2C580%2C580"
+  },
+  {
+    "id": 11,
+    "character": "Birnok",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/birnok-main_2f3a440d.jpeg?region=417%2C1%2C806%2C803"
+  },
+  {
+    "id": 11,
+    "character": "Dr. Rhasiv",
+    "img": "https://lumiere-a.akamaihd.net/v1/images/dr-rhasiv-main_befd63ff.jpeg?region=777%2C1%2C803%2C803"
+  }
+]
