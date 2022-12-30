@@ -17,7 +17,6 @@ const GalleryMain = ({ id }) => {
         const response = await fetch(URL);
         if (!response.ok) throw new Error("Did not receive expected data");
         const galleryList = await response.json();
-        console.log(galleryList);
         setGallery(galleryList);
         setError(null);
       } catch (error) {
