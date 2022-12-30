@@ -1,10 +1,10 @@
 import Films from "./views/films/Films";
 import MovieDetails from "./views/MovieDetails/MovieDetails";
 import { Route, Routes, Outlet } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
-  const movieId = "-NKHb9fYfE82rwSCdHPU";
   return (
     <div>
       <Routes>
@@ -22,7 +22,7 @@ function Layout() {
     <div>
       <h1>HEADER</h1>
       <Outlet />
-      <h1>FOOTER</h1>
+      <Footer />
     </div>
   );
 }

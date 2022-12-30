@@ -1,0 +1,87 @@
+.container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #0b0b0b;
+  padding-top: 1em;
+}
+.img-footer {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  left: 3em;
+  top: 4.5em;
+}
+.container-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4em;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 500;
+}
+.container .icon {
+  fill: currentColor;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 1.4em;
+  margin-top: 1em;
+}
+.container svg:hover,
+span.description:hover {
+  cursor: pointer;
+  /* box-shadow: 1px 1px 3px white; */
+  /* box-shadow: 0 0 50px white; */
+  filter: drop-shadow(0.6px 0.6px 0.6px white);
+}
+.icon svg {
+  margin-right: 1.8em;
+}
+.social-kids {
+  color: gray;
+}
+
+.description {
+  width: 100%;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 1px 4px;
+  margin-left: 3em;
+  background-color: white;
+  color: #0b0b0b;
+  font-weight: bold;
+  font-size: 0.5em;
+}
+
+.codespace {
+  margin: 4em 0;
+}
+/* Bootstrap breakpoints /
+/ Small devices (landscape phones, 576px and up) /
+@media (min-width: 576px) { 
+    / here your code /
+ }
+/ Medium devices (tablets, 768px and up) /
+@media (min-width: 768px) { 
+    / here your code /
+ }
+/ Large devices (desktops, 992px and up) /
+@media (min-width: 992px) { 
+    / here your code /
+ }
+/ X-Large devices (large desktops, 1200px and up) /
+@media (min-width: 1200px) {
+    / here your code /
+ }
+/ XX-Large devices (larger desktops, 1400px and up) /
+@media (min-width: 1400px) {
+    / here your code */
+/* } */
