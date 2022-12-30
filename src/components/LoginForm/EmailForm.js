@@ -22,21 +22,10 @@ export const EmailForm = () => {
         password: "",
     });
 
+    //emailForm
     const handlesubmitEmail = async (e) => {
         e.preventDefault();
-        /* try{
-            let userDb = await fetch('public/db/users.json', {
-                headers : { 
-                  'Content-Type': 'application/json',
-                  'Accept': 'application/json',
-                 }
-              });
-            let userResponse = await userDb.text();
-            console.log(userResponse);
-        } catch(error){
-            console.log(error);
-        } */
-
+        
         let emailInput = emailRef.current.value;
 
         if (emailInput.length <= 0) {
