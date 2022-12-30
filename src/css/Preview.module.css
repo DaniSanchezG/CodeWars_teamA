@@ -1,0 +1,40 @@
+.divPreview{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex: 1 1 1 1;
+    position: absolute;
+    top: 450px;
+    left: 200px;
+    width: 800px;
+    z-index: 12;
+    
+}
+.divComponents{
+    width: 140px;
+    height: 90px;
+    margin-right: 1em;
+    position: relative;
+    display: inline-block;
+    
+}
+.divImage{
+    position: absolute;
+    text-align: left;
+    width: 140px;
+    
+}
+img{
+    width: 140px;
+    height: 90px ;
+    margin-right: 2rem;
+    text-align: left;
+
+}
+.title{
+    width: 140px;
+    z-index: 15;
+
+}
+
+
