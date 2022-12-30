@@ -105,10 +105,14 @@ input:focus::placeholder {
 .success-visible {
     display: block !important;
     color: green;
-    border: 1px solid green; 
+    border: 1px solid green;
     margin: 2em;
     padding: 2em;
     text-align: center;
+    letter-spacing: .9px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 400;
 }
 .prueva{
     background-color: #fff;
@@ -129,9 +133,9 @@ small {
 }
 .required-message { 
     display: block !important;
-    margin: -10px 20px 0 ;
-    font-size: .9rem;
-    color: red ;
+    margin: -17px 25px 32px;
+    color: red;
+    letter-spacing: .9px;
 }
 .forgot {
     color: #edd700;
