@@ -27,7 +27,7 @@ function ImagePreview() {
     {
       index: 3,
       url: image4,
-      title: "FAVORITE EPISODE OF ANDOR(SO FAR)",
+      title: "FAVORITE EPISODE OF ANDOR (SO FAR)",
     },
   ];
 
@@ -37,9 +37,12 @@ function ImagePreview() {
     <div className={classes.divPreview}>
       {image.map((image, index) => (
         <div className={classes.divComponents}>
-          <img src={image.url} />
-          <div className={classes.divImage} key={index}>
-            <span className={image.title}>{image.title}</span>
+          <img src={image.url} className={classes.img} />
+          <div className={classes.divExtra} key={index}>
+            <ProgressBar/>
+            <div className={classes.divText}>
+            <span className={classes.title}>{image.title}</span>
+            </div>
           </div>
         </div>
       ))}

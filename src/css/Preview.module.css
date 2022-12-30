@@ -1,40 +1,45 @@
-.divPreview{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex: 1 1 1 1;
-    position: absolute;
-    top: 450px;
-    left: 200px;
-    width: 800px;
-    z-index: 12;
-    
+.divPreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 1 1 1;
+  position: absolute;
+  top: 65.75%;
+  left: 22%;
+  width: 800px;
+  z-index: 12;
 }
-.divComponents{
-    width: 140px;
-    height: 90px;
-    margin-right: 1em;
-    position: relative;
-    display: inline-block;
-    
+.divComponents {
+  width: 140px;
+  height: 90px;
+  margin-right: 0.5em;
+  position: relative;
+  display: inline-block;
 }
-.divImage{
-    position: absolute;
-    text-align: left;
-    width: 140px;
-    
+.divExtra {
+  position: absolute;
+  text-align: left;
+  width: 140px;
+  z-index: 5;
+  top: 0;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
 }
-img{
-    width: 140px;
-    height: 90px ;
-    margin-right: 2rem;
-    text-align: left;
-
+.divText{
+    padding: 5px;
+    width: auto;
+    height: auto;
 }
-.title{
-    width: 140px;
-    z-index: 15;
-
+.img {
+  width: 140px;
+  height: 80px;
+  margin-right: 2rem;
+  text-align: left;
+  filter: brightness(0.3);
 }
-
-
+.title {
+  width: 140px;
+  z-index: 15;
+}

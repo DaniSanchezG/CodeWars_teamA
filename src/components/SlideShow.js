@@ -11,12 +11,21 @@ import image4 from "../img/fourth.jpeg";
 
 const slideImages = [
   {
-    index:1,
+    index: 1,
     url: image1,
     title: "STAR WARS BEST OF 2022",
     content:
       "StarWars.com´s writers dive into the year´s biggest announcements, releases, and fan-favorite moments",
     button: "READ MORE",
+    css: {
+      width: "480px",
+      position: "absolute",
+      color: "white",
+      textAlign: "left",
+      zIndex: "5",
+      top: "24%",
+      paddingLeft: "80px",
+    },
     css_button: {
       backgroundColor: "#ffdb27",
       color: "black",
@@ -29,8 +38,8 @@ const slideImages = [
       marginTop: "30px",
     },
   },
-  { 
-    index:2,
+  {
+    index: 2,
     url: image2,
     title: "FROM SANTA YODA TO ROCKET SLEDS",
     content:
@@ -57,13 +66,22 @@ const slideImages = [
       marginTop: "30px",
     },
   },
-  { 
-    index:3,
+  {
+    index: 3,
     url: image3,
     title: "THE HIGH REPUBLIC SHOW",
     content:
       "Phase II exclusive reveals, a visit to Dark Horse comics, and more!",
     button: "WATCH NOW",
+    css: {
+      width: "480px",
+      position: "absolute",
+      color: "white",
+      textAlign: "left",
+      zIndex: "5",
+      top: "24%",
+      paddingLeft: "80px",
+    },
     css_button: {
       backgroundColor: "#ffdb27",
       color: "black",
@@ -77,11 +95,21 @@ const slideImages = [
     },
   },
   {
-    index:4,
+    index: 4,
     url: image4,
     title: "FROM A CERTAIN POINT OF VIEW",
     content: "What´s your favorite episode of Andor(so far)?",
-    button: "READ MORE", 
+    button: "READ MORE",
+    css: {
+      width: "600px",
+      position: "absolute",
+      color: "white",
+      textAlign: "center",
+      zIndex: "5",
+      top: "28%",
+      alignItems: "center",
+      marginLeft:'450px'
+    },
     css_button: {
       backgroundColor: "#ffdb27",
       color: "black",
@@ -95,9 +123,7 @@ const slideImages = [
   },
 ];
 
-
 class SlideShow extends Component {
-  
   constructor() {
     super();
     this.slideRef = React.createRef();
@@ -125,23 +151,28 @@ class SlideShow extends Component {
       infinite: true,
       easing: "ease",
     };
-   
+
     return (
       <div className="container">
         <Slide ref={this.slideRef} {...properties}>
           {slideImages.map((slideImages, index) => (
-            <div className={classes.cont} key={index}>
-              <img src={slideImages.url} className={classes.slideImg}/>
-              <div className={classes.divText}>
+            <>
+              <div className={classes.conta} key={index}>
+                <img src={slideImages.url} className={classes.slideImg} />
+              </div>
+              <div style={slideImages.css}>
                 <span className={classes.title}>{slideImages.title}</span>
                 <span className={classes.content}>{slideImages.content}</span>
                 <button style={slideImages.css_button}>
                   {slideImages.button}
                 </button>
               </div>
-            </div>
+            </>
           ))}
         </Slide>
+        <div className='img-preview'>
+            <ImagePreview/>
+        </div>
       </div>
     );
   }

@@ -10,12 +10,13 @@ const LoginPage = lazy(() => import("./views/Login/LoginPage"))
 // import LoginPage from "./views/Login/LoginPage";*/
 import Mobile from "./components/Mobile";
 import SlideShow from "./components/SlideShow";
+import { ProgressBar } from "./components/ProgressBar";
 
 
 function App() {
   return (
     <>
-    <Mobile/>
+    <SlideShow/>
     </>
   );
 }

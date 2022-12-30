@@ -4,12 +4,6 @@
     background-repeat: no-repeat;
 }
 
-.container{
-    position: absolute;
-    width: 100vw;
-    height: 75vh;
-    z-index: 0;
-}
 /*-------------TEXTO--------------*/
 .title{
     font-size: 37px;
@@ -22,15 +16,7 @@
     font-size: 23px;
     font-weight: 400;
     
-}
-.divText{
-    width: 480px;
-    position: absolute;
-    color: white;
-    text-align: left;
-    z-index: 5;
-    top: 24%;
-    padding-left: 80px;
+    
 }
 
 @media (min-width: 576px) { 
@@ -53,15 +39,9 @@
         min-width: 100vw;
         background-repeat: no-repeat;
     }
-    .content{
-        height: 75vh;
-        width:100vw;
-    }
     .container{
         position: absolute;
-        width: 100vw;
-        height: 75vh;
-        z-index: 0;
+        
     }
     /*-------------TEXTO--------------*/
     .title{
