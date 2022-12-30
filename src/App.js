@@ -1,11 +1,14 @@
 import MovieDetails from "./views/MovieDetails/MovieDetails";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const movieId = "-NKHb9fYfE82rwSCdHPU";
-  
+  //const movieId = "-NKHb9fYfE82rwSCdHPU";
+
   return (
     <div>
-      <MovieDetails id={movieId} />
+      <Routes>
+        <Route path="/films/:filmId" element={<MovieDetails />} />
+      </Routes>
     </div>
   );
 }

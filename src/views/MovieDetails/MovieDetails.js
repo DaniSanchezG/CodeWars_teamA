@@ -4,11 +4,13 @@ import MovieInfo from "./MovieInfo";
 import MovieSelect from "./MovieSelect";
 import DualRing from "../../components/UI/Spinners/DualRing";
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-function MovieDetails(props) {
+function MovieDetails() {
   const [movieInfo, setMovieInfo] = useState({});
   const [pending, setPending] = useState(false);
   const [error, setError] = useState("");
+  const params = useParams();
 
   const fetchMovieInfo = async (id) => {
     try {
@@ -34,8 +36,8 @@ function MovieDetails(props) {
   };
 
   useEffect(() => {
-    fetchMovieInfo(props.id);
-  }, []);
+    fetchMovieInfo(params.filmId);
+  }, [params.filmId]);
 
   return (
     <div className={classes["movie-details-container"]}>
