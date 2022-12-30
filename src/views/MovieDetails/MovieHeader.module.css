@@ -2,7 +2,7 @@
 .movie-banner-container {
   position: relative;
   transition: opacity 250ms, padding-bottom 250ms;
-  margin-bottom: 10em;
+  margin-bottom: 14em;
 }
 
 .movie-banner-container img {
@@ -40,14 +40,15 @@
 
 .banner-title h2 {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-align: center;
   line-height: 1.2;
   z-index: 5;
   position: absolute;
   bottom: 0;
-  margin-left: 1.2em;
-  margin-right: 1.2em;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+  font-family: 'Cabin', sans-serif;
 }
 
 /* yellow button stream on code+ */
@@ -58,7 +59,7 @@
 }
 .stream-button {
   background-color: #fade4b;
-  padding: 1.2em 2em;
+  padding: 1.1em 2.1em;
   border-radius: 1.8rem;
   font-weight: bold;
   font-size: 1.1rem;
@@ -89,6 +90,10 @@
     );
   }
 
+  .movie-banner-container {
+    margin-bottom: 12em;
+  }
+
   .banner-title h2 {
     font-size: 2rem;
     bottom: -40px;
@@ -103,6 +108,10 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .movie-banner-container {
+    margin-bottom: 1em;
+  }
+
   .banner-title h2 {
     left: 80px;
     bottom: 140px;
@@ -137,6 +146,5 @@
 
   .stream-button {
     bottom: 60px;
-    left: 270px;
   }
 }

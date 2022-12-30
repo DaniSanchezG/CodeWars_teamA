@@ -1,7 +1,8 @@
-import MovieDetails from "./components/MovieDetails/MovieDetails";
+import MovieDetails from "./views/MovieDetails/MovieDetails";
 
 function App() {
   const movieId = "-NKHb9fYfE82rwSCdHPU";
+  
   return (
     <div>
       <MovieDetails id={movieId} />
@@ -10,4 +11,3 @@ function App() {
 }
 
 export default App;
-

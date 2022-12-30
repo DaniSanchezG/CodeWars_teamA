@@ -2,7 +2,7 @@ import classes from "./MovieDetails.module.css";
 import MovieHeader from "./MovieHeader";
 import MovieInfo from "./MovieInfo";
 import MovieSelect from "./MovieSelect";
-import DualRing from "../UI/DualRing";
+import DualRing from "../../components/UI/Spinners/DualRing";
 import { useState, useEffect } from "react";
 
 function MovieDetails(props) {

@@ -30,7 +30,7 @@
 .select-container-title {
   width: 90%;
   margin: auto;
-  margin-bottom: 2.2em;
+  margin-bottom: 1.7em;
   background-color: #48494a;
   padding: 14px 0 14px 26px;
   font-size: 1.3rem;
@@ -39,6 +39,10 @@
   border-radius: 0.5rem;
   position: relative;
   cursor: pointer;
+}
+
+.select-container-title>h3 {
+  font-family: 'Cabin', sans-serif;
 }
 
 .select-container-title::before {
@@ -109,13 +113,18 @@
   width: 100%;
 }
 
-.link-list a {
+.link {
   color: #b5b7b7;
   line-height: 1.5rem;
   letter-spacing: 0.25px;
   text-transform: uppercase;
   font-size: 1.2rem;
   text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: #fff;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -135,10 +144,16 @@
     border-radius: 0.5rem;
     width: 90%;
     margin: auto 5%;
+    column-gap: 10px;
+    margin-top: 0.2em;
   }
   .link-list-item {
     width: calc(33% - 20px);
     padding: 10px 0 10px 12px;
+  }
+
+  .link {
+    font-size: 1.3rem;
   }
 }
 

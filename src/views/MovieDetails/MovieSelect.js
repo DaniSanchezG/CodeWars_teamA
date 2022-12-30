@@ -39,37 +39,37 @@ function MovieSelect() {
         >
           <ul className={classes["link-list"]}>
             <li className={classes["link-list-item"]}>
-              <a href="#">Star Wars: The Rise of Skywalker (Episode IX)</a>
+              <a className={classes.link} href="#">Star Wars: The Rise of Skywalker (Episode IX)</a>
             </li>
             <li className={classes["link-list-item"]}>
-              <a href="#">Solo: A Star Wars Story</a>
+              <a className={classes.link} href="#">Solo: A Star Wars Story</a>
             </li>
             <li className={classes["link-list-item"]}>
-              <a href="#">Star Wars: The Last Jedi</a>
+              <a className={classes.link} href="#">Star Wars: The Last Jedi</a>
             </li>
             <li className={classes["link-list-item"]}>
-              <a href="#">Rogue One: A Star Wars Story</a>
+              <a className={classes.link} href="#">Rogue One: A Star Wars Story</a>
             </li>
             <li className={classes["link-list-item"]}>
-              <a href="#">Star Wars: The Force Awakens (Episode VII)</a>
+              <a className={classes.link} href="#">Star Wars: The Force Awakens (Episode VII)</a>
             </li>
             <li className={classes["link-list-item"]}>
-              <a href="#">Star Wars: Return of the Jedi (Episode VI)</a>
+              <a className={classes.link} href="#">Star Wars: Return of the Jedi (Episode VI)</a>
             </li>
             <li className={classes["link-list-item"]}>
-              <a href="#">Star Wars: The Empire Strikes Back (Episode V)</a>
+              <a className={classes.link} href="#">Star Wars: The Empire Strikes Back (Episode V)</a>
             </li>
             <li className={classes["link-list-item"]}>
-              <a href="#">Star Wars: A New Hope (Episode IV)</a>
+              <a className={classes.link} href="#">Star Wars: A New Hope (Episode IV)</a>
             </li>
             <li className={classes["link-list-item"]}>
-              <a href="#">Star Wars: Revenge of the Sith (Episode III)</a>
+              <a className={classes.link} href="#">Star Wars: Revenge of the Sith (Episode III)</a>
             </li>
             <li className={classes["link-list-item"]}>
-              <a href="#">Star Wars: Attack of the Clones (Episode II)</a>
+              <a className={classes.link} href="#">Star Wars: Attack of the Clones (Episode II)</a>
             </li>
             <li className={classes["link-list-item"]}>
-              <a href="#">Star Wars: The Phantom Menace (Episode I)</a>
+              <a className={classes.link} href="#">Star Wars: The Phantom Menace (Episode I)</a>
             </li>
           </ul>
         </div>
