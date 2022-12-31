@@ -1,16 +1,10 @@
 import classes from "./DataBankCards.module.css";
 import { useState, useEffect } from "react";
-//import useFetchDataBank from "../hooks/useFetchDataBank";
 
 function DataBankCards(props) {
-  //useFetchDataBank();
-
   const [characters, setCharacters] = useState({});
-  // const [pending, setPending] = useState(true);
-  // const [error, setError] = useState(null);
 
   useEffect(() => {
-    // console.log("useEfect");
     cardsInfo();
   }, []);
 
@@ -20,9 +14,9 @@ function DataBankCards(props) {
     );
     const cardInfo = await cardsData.json();
     setCharacters(cardInfo);
-    // console.log(cardInfo);
   };
 
+  
   return (
     <>
       <ul className={classes["cards-wrapper-ul"]}>

@@ -9,10 +9,6 @@
 .card-li {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background-color: #1d1e1f;
-  border-radius: 6px;
 }
 .card-li img {
   border-top-left-radius: 6px;
@@ -24,17 +20,18 @@
 
 /* Zona del nombre del personaje */
 .card-info {
+
   padding: 6px 0;
-  height: 10vh;
+  height: 12vh;
   width: 100%;
   background-color: #1d1e1f;
 }
 /* Nombre del personaje */
 .card-info span {
   color: white;
-  font-family: "DINNext", "Rubik", sans-serif;
   cursor: pointer;
   padding: 0 4px;
+  font-weight: bold;
 }
 /* Barra y punto entre foto y nombre del personaje */
 .card-decal {
@@ -87,7 +84,7 @@ span.border-bottom::before {
   width: 100%;
   background-color: black !important;
 }
-.half-bottom-card{
+.half-bottom-card {
   background-color: black;
 }
 span.border-bottom::after {
@@ -99,54 +96,64 @@ span.border-bottom::after {
   border-bottom-right-radius: 6px;
 }
 
+/* /////////////////////////////////////// */
+
 @media (max-width: 767px) {
+  /* ocultar barrita luminosa, también con display:none */
   .card-decal {
     visibility: collapse;
   }
+  /* constedor de todas las card */
   .cards-wrapper-ul {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
   }
+  /* contenedor de la card */
   .card-li {
     display: flex;
     flex-direction: row;
+    height: 100%;
     width: 100%;
-    height: 80%;
-    background-color: #1d1e1f;
-    border-radius: 6px;
-  
   }
+  /* conentedor de la imagen */
+  .card-li img {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 0;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #1d1e1f;
+  }
+
+  /* parte derecha de la card, con el nombre y la info del personaje */
   .card-info {
     padding: 6px 0;
     height: 100%;
     width: 100%;
+    border-top-right-radius: 6px;
   }
-  .half-bottom-card{
-display: flex;
-flex-direction: column;
+  /* nombre del personaje */
+  .card-info span {
+    padding-left: 1em;
+    font-size: 1.3rem;
+    font-weight: 400;
   }
-  /* border inferior con muesca negra
-span.border-bottom::before {
-  float: left;
-  border-right: 12px solid transparent;
-  width: 30%;
-  border-top: 12px solid #1d1e1f;
-  content: "";
-  border-bottom-left-radius: 6px;
-}
-.border-bottom-container {
-  display: inline;
-  width: 100%;
-  background-color: black;
-}
+  /* border con muesca negra */
+  .half-bottom-card {
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 6px;
+    width: 100%;
+  }
+  span.border-bottom::before {
+    border-bottom-left-radius: 0;
+    width: 35%;
+  }
+  span.border-bottom::after {
+    width: 25%;
 
-span.border-bottom::after {
-  float: right;
-  border-left: 12px solid transparent;
-  width: 30%;
-  border-top: 12px solid #1d1e1f;
-  content: "";
-  border-bottom-right-radius: 6px;
-} */
+  }
 
 }
