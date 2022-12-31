@@ -4,8 +4,9 @@ import NavMobile from '../NavMobile/Burger'
 import React from 'react';
 // import styled from 'styled-components';
 // import Burger from '../Nav/Burger';
-
-export default function Nav ({ logged }) {
+// { logged }
+export default function Nav () {
+  
   return (
     <>
     {/* Imported NavMobile out side the nav list */}
@@ -25,28 +26,28 @@ export default function Nav ({ logged }) {
           <NavLink exact to="/films">FILMS</NavLink>
           <span className="nav__link-bar nav__link-bar--yellow"></span>
         </li>
-        <li className={logged.login ? 'nav__link' : 'nav__link disabled'}>
+        <li className='nav__link' >
           <NavLink to="/series">SERIES</NavLink>
          
           <span className="nav__link-bar nav__link-bar--yellow"></span>
         </li>
-        <li className={logged.login ? 'nav__link' : 'nav__link disabled'}>
+        <li className='nav__link' >
           <NavLink to="/interactive">INTERACTIVE</NavLink>
          
           <span className="nav__link-bar nav__link-bar--yellow"></span>
         </li>
-        <li className={logged.login ? 'nav__link' : 'nav__link disabled'}>
+        <li className='nav__link' >
           <NavLink to="/community">COMMUNITY</NavLink>
          
           <span className="nav__link-bar nav__link-bar--yellow"></span>
         </li>
-        <li className={logged.login ? 'nav__link' : 'nav__link disabled'}>
+        <li className='nav__link' >
           <NavLink to="/databank">DATABANK</NavLink>
          
           <span className="nav__link-bar nav__link-bar--yellow"></span>
         </li>
         
-        <li className={logged.login ? 'nav__link' : 'nav__link disabled'}>
+        <li className='nav__link' >
           <NavLink to="/code+">CODE+</NavLink>
          
           <span className="nav__link-bar nav__link-bar--yellow"></span>

@@ -43,3 +43,8 @@
 .social__kids:hover {
   background-color: #7a7a7a;
 }
+@media (max-width: 768px) {
+  .social{
+      display: none;
+  }
+}

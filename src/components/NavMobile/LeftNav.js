@@ -20,7 +20,7 @@ const Ul = styled.ul`
     left: 0;
     height: 100vh;
     width: 300px;
-    padding-top: 5rem;
+    padding-top: 10rem;
     transition: transform 0.02s ease-in-out;
     li {
       color: #fff;

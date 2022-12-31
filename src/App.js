@@ -1,12 +1,12 @@
 
 // import React from 'react';
-// import Navbar from '../src/components/Nav/Navbar';
+// import Nav from '../src/components/Nav/Nav';
 
 
 // function App() {
 //   return (
 //     <div className="App">
-//       <Navbar />
+//       <Nav/>
 //       App
 //     </div>
 //   );
@@ -40,8 +40,8 @@ function App () {
       {registerModal && <Modal closeModal={setRegisterModal} openModal={setLoginModal} title={'create your account'} />} */}
       <Header openLoginModal={setLoginModal} openRegisterModal={setRegisterModal} logged={logged} setLogged={setLogged} />
       <Router>
-        <Nav logged={logged} />
-       
+        <Nav />
+        {/* logged={logged}  */}
       </ Router>
     </div>
   );

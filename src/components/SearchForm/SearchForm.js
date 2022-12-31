@@ -4,7 +4,7 @@ import Button from '../Button/Button'
 
 export default function SearchForm ({ openLoginModal, openRegisterModal, logged, setLogged }) {
   return (
-    <div>
+    <div className='search_container'>
       <form className="search__form">
         <input type="text" placeholder="Search Star Code" className="search__input" />
         <button arial-label="search-icon" onClick={(e) => e.preventDefault()} className="search__button"><ion-icon name="search-outline"></ion-icon></button>

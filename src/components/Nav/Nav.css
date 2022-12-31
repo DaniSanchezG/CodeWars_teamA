@@ -12,6 +12,11 @@
   justify-content: center;
   border-bottom: 1px solid #333;
 }
+@media (max-width: 768px) {
+  .nav__links {
+      display: none;
+  }
+}
 
 .nav__link {
   display: flex;
