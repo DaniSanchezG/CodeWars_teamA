@@ -3,49 +3,30 @@ import MovieHeader from "./MovieHeader";
 import MovieInfo from "./MovieInfo";
 import MovieSelect from "./MovieSelect";
 import DualRing from "../../components/UI/Spinners/DualRing";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import useFetchMovieInfo from "../../hooks/useFetchMovieInfo";
 
 function MovieDetails() {
-  const [movieInfo, setMovieInfo] = useState({});
-  const [pending, setPending] = useState(false);
-  const [error, setError] = useState("");
   const params = useParams();
 
-  const fetchMovieInfo = async (id) => {
-    try {
-      setPending(true);
-      setError(null);
-
-      const response = await fetch(
-        "https://star-wars-movies-ad4e6-default-rtdb.europe-west1.firebasedatabase.app/films/" +
-          id +
-          ".json"
-      );
-
-      if (response.ok) {
-        const data = await response.json();
-        setMovieInfo(data);
-      }
-    } catch (error) {
-      setError({
-        message: error.message || "Something went wrong.",
-      });
-    }
-    setPending(false);
-  };
+  const { pending, error, movieInfo, fetchMovieInfo, movies, fetchFilms } = useFetchMovieInfo();
 
   useEffect(() => {
     fetchMovieInfo(params.filmId);
   }, [params.filmId]);
 
+  useEffect(() => {
+    fetchFilms();
+  }, []);
+
   return (
     <div className={classes["movie-details-container"]}>
       {pending && <DualRing />}
 
-      {Object.keys(movieInfo).length > 0 && error === null && (
+      {Object.keys(movieInfo).length > 0 && movies.length > 0 && error === null && (
         <>
-          <MovieSelect />
+          <MovieSelect movies={movies} />
           <MovieHeader info={movieInfo} />
           <MovieInfo info={movieInfo} />
         </>
