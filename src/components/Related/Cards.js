@@ -3,7 +3,6 @@ import classes from "./Cards.module.css";
 
 //Components
 import DataItems from "./DataItems";
-// import ButtonNeon from "../UI/Buttons/ButtonNeon";
 
 //Hooks
 import { useState, useEffect } from "react";
@@ -22,7 +21,6 @@ function Cards() {
       setPending(null);
 
       const response = await fetch(FETCH_DATAS);
-
       // console.log(response);
 
       if (response.ok) {
@@ -35,7 +33,6 @@ function Cards() {
         message: error.message || "Something went wrong",
       });
     }
-
     setPending(false);
   };
 

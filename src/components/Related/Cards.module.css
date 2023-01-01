@@ -7,7 +7,7 @@ body {
 
 /*Etiqueta section, elemento contenedor principal*/
 .related {
-  padding: 1em 1.5em;
+  padding: .7em 1.5em;
 }
 
 /*Elemento contenedor para la el componente Cards*/
@@ -42,12 +42,13 @@ body {
   background-color: #1d1e1f;
   border-bottom-left-radius: 0.6em;
   border-bottom-right-radius: 0.6em;
-  margin-top: -0.5em;
+  padding: 2em 0;
+  margin-top: -2em;
 }
 
 .cards-container .content-info {
   padding: 0 0 0 0.8em;
-  padding-bottom: 4em;
+  padding-bottom: 5em;
 }
 
 .cards-container h3 {
@@ -55,7 +56,14 @@ body {
   font-size: 1.4em;
   color: #ffffff;
   cursor: pointer;
-  padding: 0.5em 0;
+  /* padding: 2.5em 0; */
+  margin: -1.8em 0.2em;
+}
+
+@media (min-width: 500px) {
+  .visibility {
+    visibility: collapse;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -67,14 +75,20 @@ body {
     justify-content: space-around;
   }
   .related > ul li {
-    width: 33.33%;
+    width: 33%;
+    margin: -.2em;
   }
   .cards-container .content-info h3 {
     font-size: 1.1em;
+    margin: -1.4em 0;
   }
   .cards-container .content-info {
     padding: 0 0 0 0.8em;
-    padding-bottom: 5.8em;
+    padding-bottom: 6.2em;
+  }
+  .visibility {
+    visibility: visible;
+    margin: -0.3em 0.3em;
   }
 }
 
@@ -90,10 +104,14 @@ body {
     width: 16%;
   }
   .cards-container .content-info h3 {
-    font-size: 1.4em;
+    font-size: 1.3em;
+    margin: -.9em 0;
   }
   .cards-container .content-info {
     padding: 0 0 0 0.8em;
-    padding-bottom: 4em;
+    padding-bottom: 4.9em;
+  }
+  .visibility {
+    visibility: visible;
   }
 }

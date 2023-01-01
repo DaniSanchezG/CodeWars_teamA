@@ -8,7 +8,9 @@ function DataItems(props) {
       <div className={classes["cards-container"]}>
         <img src={props.img} />
         <div className={classes["characters-container"]}>
+          <div className={classes.visibility}>
           <ButtonNeon/>
+          </div>
           <div className={classes["content-info"]}>
             <h3>{props.character}</h3>
           </div>
