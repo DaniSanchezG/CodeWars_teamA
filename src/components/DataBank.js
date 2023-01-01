@@ -1,7 +1,18 @@
 import classes from "./DataBank.module.css";
 import DataBankCards from "./DataBankCards";
+import { useEffect } from "react";
+import useFetchCharacters from "../hooks/useFetchDataBank";
+import DualRing from "./UI/Spinners/DualRing";
+import DataBankNull from "./DataBankNull";
+import DataBankError from "./DataBankError";
 
 function DataBank() {
+  const { pending, error, characters, fetchTasksHandler } =
+    useFetchCharacters();
+  useEffect(() => {
+    fetchTasksHandler();
+  }, []);
+
   return (
     <section className={classes["data-bank"]}>
       <div className={classes["title-bank"]}>
@@ -30,9 +41,16 @@ function DataBank() {
       </form>
       <div className={classes["cards-container"]}>
         <div className={classes["cards-container-title"]}>
-          <h3>Andor</h3>
+          <h3>Andor </h3>
         </div>
-        <DataBankCards  />
+        {pending && <DualRing />}
+        {!pending && characters !== null && error === null && (
+          <DataBankCards items={characters} />
+        )}
+        {!pending && characters === null && !error && <DataBankNull />}
+        {!pending && characters !== null && error !== null && (
+          <DataBankError items={error} />
+        )}
         <div className={classes["show-more"]}>
           <a href="#Home" className={classes["show-more-button"]}>
             SHOW MORE

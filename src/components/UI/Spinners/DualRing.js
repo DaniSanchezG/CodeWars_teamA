@@ -7,3 +7,4 @@ function DualRing() {
         </div>
     );
 }
+export default DualRing;
