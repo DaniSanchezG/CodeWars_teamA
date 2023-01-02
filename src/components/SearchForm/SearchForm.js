@@ -10,7 +10,7 @@ export default function SearchForm ({ openLoginModal, openRegisterModal, logged,
         <button arial-label="search-icon" onClick={(e) => e.preventDefault()} className="search__button"><ion-icon name="search-outline"></ion-icon></button>
       </form>
       
-        logged.login ? {(
+        {(
       
           <div className="button-group">
          

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom:  -8px;
   }
   
   .nav__link_left a {
@@ -29,5 +30,7 @@
     opacity: 0;
     transition: opacity 0.5s linear;
     color: #fade4b;
-    
-  }
+    }
+    .social__kids{
+       
+    }

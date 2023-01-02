@@ -3,7 +3,11 @@ import styled from 'styled-components';
 
 import { NavLink } from "react-router-dom"
 import '../../components/NavMobile/LeftNav.css'
-import Social from '../Social/Social'
+// import Social from '../Social/Social'
+import Button from '../Button/Button';
+
+import SearchForm from '../SearchForm/SearchForm';
+
 
 const Ul = styled.ul`
   list-style: none;
@@ -29,7 +33,7 @@ const Ul = styled.ul`
   }
 `;
 
-const LeftNav = ({ open }) => {
+const LeftNav = ({ open , openRegisterModal}) => {
   return (
     <>
     <Ul open={open}>
@@ -72,14 +76,25 @@ const LeftNav = ({ open }) => {
          
           <span className="nav__link-bar_left"></span>
         </li>
-       
-   </Ul>
-      <Social>
-      <li className="social__icon"><a href="#!"><ion-icon name="logo-facebook"></ion-icon></a></li>
+       <SearchForm/>
+        <div className="button-group">
+         
+         <Button open={() => openRegisterModal(true)} text={'SIGN IN'} name={'login__button'} />
+       </div>
+      
+
+        <ul className="social__links">
+        <li className="social__icon"><a href="#!"><ion-icon name="logo-facebook"></ion-icon></a></li>
         <li className="social__icon"><a href="#!"><ion-icon name="logo-instagram"></ion-icon></a></li>
         <li className="social__icon"><a href="#!"><ion-icon name="logo-youtube"></ion-icon></a></li>
         <li className="social__icon"><a href="#!"><ion-icon name="logo-twitter"></ion-icon></a></li>
-      </Social>
+        <li className="social__icon"><a href="#!" className="social__kids">KIDS</a></li>
+      </ul>
+      
+   </Ul>
+   
+     
+    
         </>
   )
 }
