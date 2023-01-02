@@ -34,7 +34,8 @@ function Films() {
   };
 
   const showList = () => {
-    setShowListState(!showListState);
+    console.log(showListState);
+    showListState ? setShowListState(false) : setShowListState(true);
   };
 
   return (
@@ -48,8 +49,8 @@ function Films() {
         <ul className={classes["aside-container"]} onClick={showList}>
           <li className={`${classes["aside-text"]} ${!assideActive? classes.active : null }`} onClick={originalOrderFilms}>
             ALL FILMS ({orderedFilms.length})
-          </li>
-          <li className={`${classes["aside-text"]} ${assideActive? classes.active : null }`} onClick={handleOderByYear}>
+          </li> <span className={`${classes.tick} ${showListState? classes.rotate : null }`}/>
+          <li className={`${classes["aside-text"]} ${assideActive? classes.active : "" } ${showListState? classes["aside-active"] : null}`} onClick={handleOderByYear}>
             BY REALEASE YEAR ({orderedFilms.length})
           </li>
         </ul>
@@ -74,7 +75,6 @@ function Films() {
                   <div key={film} className={classes.film}>
                     <img src={orderedFilms[film].imgFilm} alt={orderedFilms[film].title} />
                     {<ButtonNeon onHover={() =>{
-                      console.log(isHovered[film]);
                       return isHovered[film]
                     }}/>}
                     <div className={classes["film-title"]}>

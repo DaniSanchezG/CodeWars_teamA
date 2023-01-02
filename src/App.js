@@ -6,6 +6,7 @@ import Error404 from "./views/Errors/Error404";
 import MovieDetails from "./views/MovieDetails/MovieDetails";
 import Databank from "./components/databank/DataBank";
 import RelatedWrapper from "./components/Related/RelatedWrapper";
+import Interactive from "./components/Interactive/Interactive";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/databank" element={<Databank  />} />
           <Route path="/databank/related" element={<RelatedWrapper  />} />
           <Route path="*" element={<Error404  />} />
+          <Route path="/interactive" element={<Interactive  />} />
         </Route>
       </Routes>
     </div>

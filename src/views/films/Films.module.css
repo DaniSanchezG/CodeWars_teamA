@@ -138,11 +138,39 @@
 }
 
 .aside-text{
-  width: 100%;
+  width: 20%;
   text-align: left;
   font-size: 1rem;
   margin: .8em 0;
   padding-bottom: 1em;
+}
+
+.tick{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  margin-top: -60px;
+  margin-left: 40%;
+  rotate: 45deg;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px dashed #ffffff;
+  transition: all 0.5s ease;
+}
+
+.aside-text:nth-child(3){
+  display: none;
+}
+
+.aside-active{
+  display: flex !important;
+  width: 20%;
+}
+
+.rotate{
+  transition: all 0.5s ease;
+  transform: rotate(180deg);
 }
 
 
@@ -173,6 +201,10 @@
   .principal-container{
     min-width: 360px;
   }
+  .tick{
+    margin-top: -4.5em;
+    margin-left: 40%;
+  }
 }
 @media (min-width: 576px) {
   .films-container{
@@ -181,18 +213,34 @@
   .aside-container{
     max-width: 100%;
   }
+  .tick{
+    margin-top: -3.4em;
+    margin-left: 58%;
+  }
 }
 @media (min-width: 768px) {
   .aside-container{
     max-width: 100%;
   }
+  .tick{
+    margin-top: -3.2em;
+    margin-left: 63%;
+  }
 }
 @media (min-width: 992px) {
+  .tick{
+    margin-top: -3.4em;
+    margin-left: 70%;
+  }
 }
 @media (min-width: 1200px) {
   .main-container{
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .tick{
+    display:none;
   }
 
   .header-spreader-bar{
@@ -215,6 +263,8 @@
 
   .aside-text{
     margin-left: 10em;
+    display: block !important;
+    width: 100%;
   }
 
   .browse-films{
