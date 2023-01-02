@@ -12,8 +12,8 @@
   width: 50px;
   height: auto;
   position: absolute;
-  left: 3em;
-  top: 4.5em;
+  left: 20em;
+  margin-top: -16em;
 }
 .container-icons {
   display: flex;

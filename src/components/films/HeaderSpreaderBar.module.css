@@ -1,0 +1,28 @@
+.header-spreader-bar{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color: black;
+    margin: 0 auto;
+    color: black;
+    margin-bottom: 4em;
+}
+
+.header-spreader-bar span:nth-child(1){
+    background-color: #48494a;
+    width: 0.5%;
+    height: 2px;
+    margin-right: .5em;
+    margin-left: 2em;
+    border-radius: .09em;
+    color: black;
+}
+
+.header-spreader-bar span:nth-child(2){
+    background-color: #48494a;
+    height: 2px;
+    width:99.5%;
+    margin-right: 2em;
+    border-radius: .09em;
+    color: black;
+}

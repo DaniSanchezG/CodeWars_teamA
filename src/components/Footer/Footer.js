@@ -1,5 +1,5 @@
 import classes from "./Footer.module.css";
-import footer from "../../assets/img/footer.jpg"
+import footer from "../../assets/Img/footer.jpg"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {

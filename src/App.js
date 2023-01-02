@@ -26,7 +26,7 @@ function App() {
 function Layout() {
   return (
     <div>
-      <h1>HEADER</h1>
+      <h1 style={{color: "white"}}>HEADER</h1>
       <Outlet />
       <Footer />
     </div>
