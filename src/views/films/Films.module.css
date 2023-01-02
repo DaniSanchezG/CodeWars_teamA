@@ -1,14 +1,16 @@
-body {
+/* body {
   background-image: url("https://i.pinimg.com/564x/bc/9c/53/bc9c53db9a7ff7c9ca8af2283f264b4f.jpg");
   color: white;
-}
+} */
 
 .principal-container{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   -webkit-box-shadow: 0px 0px 126px 175px rgba(0,0,0,0.95);
   -moz-box-shadow: 0px 0px 126px 175px rgba(0,0,0,0.95);
   box-shadow: 0px 0px 126px 175px rgba(0,0,0,0.95);
+  background-color: black;
+  min-width: 360px;
 }
 
 .advertising-bar {
@@ -24,9 +26,12 @@ body {
 
 .browse-films{
   background-color: black;
-  font-size: 2em;
-  padding: 1em 0;
+  font-size: 24px;
+  padding: .2em 0;
+  padding-top: 2em;
   padding-left: 2.3em;
+  color: white;
+  font-weight: 500;
 }
 
 .browse-films-bar{
@@ -50,8 +55,9 @@ body {
 
 .main-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
   padding-right: 10em;
@@ -65,18 +71,19 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 75%;
+    width: 100%;
     margin: 10px;
     padding: 10px;
     align-content: center;
 }
 
 .film img {
-  width: 101%;
-  max-height: 350px;
-  min-height: 350px;
+  width: 82%;
+  max-height: 280px;
+  min-height: 280px;
   object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 1.5em;
 }
 
 .bar{
@@ -89,55 +96,119 @@ body {
 }
 
 .film-title{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 0.5em 0;
+    margin-top: 1em;
+    width: 15em;
+    padding-right: 3em;
+    line-height: 1.5em;
 }
 
 .film-link{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 25%;
-    min-width: 245px;
-    max-width: 260px;
+    width: 22%;
+    min-width: 180px;
     padding: 1em;
     text-decoration: none;
     color: white;
+    margin-right: 2em;
 }
 
 .film-link:hover{
     text-decoration: none;
 }
 
-/* .film-link:visited {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-} */
 
 .aside-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 25%;
-  min-width: 250px;
-  margin: 10px;
-  padding: 10px;
-  padding-left: 4em;
-  border-right: 1px solid white;
-  justify-content: flex-end;
-  align-content: flex-start;
+  color: white;
+  height: auto;
+  overflow: hidden;
+  margin-left: 10em;
+  margin-top: -3em;
+  background-color: #48494a;
+  padding: 0 2em;
+  padding-top: .7em;
+  padding-left: 3em;
+  width: 116%;
+  border-radius: .6em;
 }
 
 .aside-text{
   width: 100%;
   text-align: left;
-  margin: 0.5em 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin: .8em 0;
+  padding-bottom: 1em;
 }
+
+
 
 .aside-text:hover{
   cursor: pointer;
 }
 
+.active::before{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 14px;
+  box-shadow: 0 0 4px 1px #fade4b;
+  background-color: white;
+  margin-top: 2px;
+  margin-left: -13px;
+}
+
+
+@media (min-width: 320px) {
+  .films-container{
+    margin-left: 20em;
+  }
+  .aside-container{
+    max-width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .films-container{
+    margin-left: 10em;
+  }
+  .aside-container{
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .aside-container{
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+  .main-container{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .aside-container{
+    max-width: 30%;
+    margin:0;
+    padding: 0;
+    margin-top: 2.2em;
+    background-color: transparent;
+  }
+  .films-container{
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  .aside-text{
+    margin-left: 10em;
+
+  }
+}
+@media (min-width: 1400px) {
+}
