@@ -1,0 +1,45 @@
+.container {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  padding: 0.8em 2em 0.5em;
+}
+
+.title {
+  position: relative;
+  color: #fff;
+  font-size: 1.8em;
+  padding-bottom: 0.2em;
+  font-weight: 500;
+}
+
+/*Subrayado del titulo*/
+.title:before,
+.title:after {
+  content: "";
+  position: absolute;
+  background-color: #707070;
+  height: 2px;
+  width: 4px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 2px;
+}
+
+/*Subrayado del titulo*/
+.title:after {
+  left: 8px;
+  width: calc(100% - 8px);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 1em 4em;
+  }
+}
+
+@media (min-width: 1140px) {
+  .container {
+    padding: 2em 7em;
+  }
+}

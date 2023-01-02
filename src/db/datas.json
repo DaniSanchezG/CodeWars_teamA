@@ -1,0 +1,34 @@
+{
+  "datas": {
+    "-NKPhtMgLUiELc7tFLSq": {
+      "character": "Vel Sartha",
+      "id": 0,
+      "img": "https://lumiere-a.akamaihd.net/v1/images/vel-sartha-main_c1baec00.jpeg?region=847%2C0%2C806%2C803"
+    },
+    "-NKPiEJurQjebsrS9dUH": {
+      "character": "Tay Kolma",
+      "id": 1,
+      "img": "https://lumiere-a.akamaihd.net/v1/images/tay-kolma-main_2919162d.jpeg?region=270%2C0%2C807%2C803"
+    },
+    "-NKPiILJ5fO6m33b660U": {
+      "character": "Leida Mothma",
+      "id": 2,
+      "img": "https://lumiere-a.akamaihd.net/v1/images/leida-mothma-main_4eaba190.jpeg?region=473%2C1%2C807%2C803"
+    },
+    "-NKPiLUWgha_-EQqrOrP": {
+      "character": "Mon Mothma",
+      "id": 3,
+      "img": "https://lumiere-a.akamaihd.net/v1/images/mon-mothma-main_06f17008.jpeg?region=563%2C0%2C804%2C803"
+    },
+    "-NKPiOqz3RklI5Ni_JjG": {
+      "character": "Runai Sculdun",
+      "id": 4,
+      "img": "https://lumiere-a.akamaihd.net/v1/images/runai-sculdun-main_92a216b8.jpeg?region=80%2C63%2C700%2C700"
+    },
+    "-NKPiSlBduXpPBfWtiv-": {
+      "character": "Davo Sculdun",
+      "id": 5,
+      "img": "https://lumiere-a.akamaihd.net/v1/images/davo-sculdun-main_f1254e40.jpeg?region=810%2C0%2C807%2C803"
+    }
+  }
+}
