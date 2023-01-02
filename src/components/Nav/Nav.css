@@ -24,7 +24,7 @@
   text-align: center;
   padding: 15px 40px;
   margin-bottom: -13px;
- 
+
 }
 
 .nav__link a {
@@ -38,15 +38,10 @@
   margin-top: 10px;
   box-shadow: 0 0 5px 2px #fade4b;
   border-top: 1px solid #fff;
-  /* margin-bottom: -14px; */
   opacity: 0;
   transition: opacity 0.5s linear;
-}
-
-.nav__link-bar--yellow {
   color: #fade4b;
 }
-
 
 .nav__link a.active + .nav__link-bar {
   opacity: 1;
@@ -64,3 +59,4 @@ a {
   color: #7a7a7a;
   text-decoration: none;
 }
+

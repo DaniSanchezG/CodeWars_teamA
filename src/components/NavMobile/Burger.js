@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import LeftNav from './LeftNav';
 // import Nav from '../Nav/Nav';
+// import Social from '../Social/Social'
 
 const StyledBurger = styled.div`
   width: 2rem;
@@ -47,7 +48,7 @@ const Burger = () => {
         <div />
       </StyledBurger>
       <LeftNav open={open}/>
-      
+      {/* <Social /> */}
     </>
   )
 }
