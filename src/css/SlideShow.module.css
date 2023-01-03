@@ -14,6 +14,7 @@
         min-width: 100vw;
         height: auto;
         position: relative;
+        background-color: black;
     }
     .container_slider{
         position: absolute;
@@ -46,7 +47,7 @@
     padding-left: 80px;
   }
   .img_preview {
-    top:    85%;
+    top:    84.9%;
     left: 22vw;
     width: 800px;
     position: absolute;
