@@ -9,13 +9,13 @@ function MovieHeader(props) {
             media="(min-width:650px)"
             srcSet={props.info.images.bannerImgDesktop}
           />
-          <img
-            src={props.info.images.bannerImgMobile}
-            alt="movie-banner"
-          />
+          <img src={props.info.images.bannerImgMobile} alt="movie-banner" />
         </picture>
         <span className={classes["gradient-background"]}></span>
         <span className={classes["banner-title"]}>
+          <div className={classes["logo-container"]}>
+            <img src={props.info.images.logoImg} alt="logo" />
+          </div>
           <h2>{props.info.bannerTitle}</h2>
         </span>
         <div className={classes["button-container"]}>
