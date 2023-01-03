@@ -2,7 +2,7 @@
 .movie-banner-container {
   position: relative;
   transition: opacity 250ms, padding-bottom 250ms;
-  margin-bottom: 10em;
+  margin-bottom: 14em;
 }
 
 .movie-banner-container img {
@@ -40,14 +40,26 @@
 
 .banner-title h2 {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-align: center;
   line-height: 1.2;
   z-index: 5;
   position: absolute;
   bottom: 0;
-  margin-left: 1.2em;
-  margin-right: 1.2em;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+  font-family: "Cabin", sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 145px;
+  max-height: 73px;
+  z-index: 5;
+  position: absolute;
+  bottom: 85px;
 }
 
 /* yellow button stream on code+ */
@@ -58,7 +70,7 @@
 }
 .stream-button {
   background-color: #fade4b;
-  padding: 1.2em 2em;
+  padding: 1.1em 2.1em;
   border-radius: 1.8rem;
   font-weight: bold;
   font-size: 1.1rem;
@@ -69,6 +81,9 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 540px) {
+  .logo-container {
+    bottom: 55px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -89,6 +104,10 @@
     );
   }
 
+  .movie-banner-container {
+    margin-bottom: 12em;
+  }
+
   .banner-title h2 {
     font-size: 2rem;
     bottom: -40px;
@@ -99,10 +118,20 @@
   .stream-button {
     bottom: -110px;
   }
+
+  .logo-container {
+    max-width: 199px;
+    max-height: 100px;
+    bottom: 20px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .movie-banner-container {
+    margin-bottom: 1em;
+  }
+
   .banner-title h2 {
     left: 80px;
     bottom: 140px;
@@ -112,6 +141,11 @@
   .stream-button {
     bottom: 60px;
     left: 130px;
+  }
+
+  .logo-container {
+    left: 150px;
+    bottom: 240px;
   }
 }
 
@@ -126,6 +160,10 @@
     bottom: 60px;
     left: 200px;
   }
+
+  .logo-container {
+    left: 190px;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -137,6 +175,9 @@
 
   .stream-button {
     bottom: 60px;
-    left: 270px;
+  }
+
+  .logo-container {
+    left: 200px;
   }
 }
