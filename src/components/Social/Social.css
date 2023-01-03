@@ -1,0 +1,50 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__links {
+  display: flex;
+  border-right: 1px solid #7a7a7a;
+}
+
+.social__icon {
+  margin: 5px 9px 0px;
+}
+
+.social__icon:last-child {
+  margin-right: 1.2em;
+}
+
+.social__icon ion-icon {
+  color: #fff;
+  font-size: 26px;
+  transition: color 0.8s ease;
+}
+
+.social__icon ion-icon:hover {
+  color: #7a7a7a;
+}
+
+.social__kids {
+  width: 50px;
+  height: 17px;
+  background-color: #fff;
+  margin-left: 1.2em;
+  padding: 0 0.5em;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: background-color 0.8s ease;
+}
+
+.social__kids:hover {
+  background-color: #7a7a7a;
+}
+@media (max-width: 768px) {
+  .social{
+      display: none;
+  }
+}

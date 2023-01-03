@@ -7,6 +7,9 @@ import MovieDetails from "./views/MovieDetails/MovieDetails";
 import Databank from "./components/databank/DataBank";
 import RelatedWrapper from "./components/Related/RelatedWrapper";
 import Interactive from "./components/Interactive/Interactive";
+import Header from "./components/Header/Header";
+import Nav from "./components/Nav/Nav";
+import SearchForm from "./components/SearchForm/SearchForm";
 
 function App() {
   return (
@@ -28,7 +31,10 @@ function App() {
 function Layout() {
   return (
     <div>
-      <h1 style={{color: "white"}}>HEADER</h1>
+      {/* <h1 style={{color: "white"}}>HEADER</h1> */}
+      <Nav /> 
+      <SearchForm />
+      <Header />
       <Outlet />
       <Footer />
     </div>

@@ -43,6 +43,7 @@
 .advertising-bar a{
   color: white;
   text-decoration: none;
+  margin-top: 1em;
 }
 
 .advertising-bar a:hover{

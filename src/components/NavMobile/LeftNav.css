@@ -1,0 +1,63 @@
+.nav__link_left{
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom:  -8px;
+  }
+  
+  .nav__link_left a {
+    font-weight: bold;
+    padding-left: 4.3rem;
+  }
+  
+  .nav__link_left a.active + .nav__link-bar_left {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+  }
+  .nav__link_left a:hover {
+    color: #fff;
+  }
+  .nav__link-bar_left{
+    display: block;
+    width: 2px;
+    height: 24px;
+    margin-left: 3.7rem;
+    margin-top: -18px;
+    box-shadow: 0 0 5px 2px #fade4b;
+    border: 1px solid #fff;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    color: #fade4b;
+    }
+    .navMovile_span{
+      margin-top: 25px;
+      border-bottom: 1.99px solid #333;
+    }
+    .sign-in-user{
+    background-color: black;
+    color: #7a7a7a;;
+    font-weight: bold;
+    padding-left: 5rem;
+    align-items: left;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    
+    }
+    .sign-in-user p:hover {
+      color: #fff;
+     }
+    
+    .sign-in-user ion-icon {
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.8s ease;
+      padding-right: 14px;
+    }
+
+    .sign-in-user ion-icon:hover {
+      color: #7a7a7a;
+    }
+ 
