@@ -8,16 +8,13 @@ const LoginPage = lazy(() => import("./views/Login/LoginPage"))
 // import TasksManager from "./views/TasksManager";
 // import About from "./views/About";
 // import LoginPage from "./views/Login/LoginPage";*/
-import Mobile from "./components/Mobile";
-import SlideShow from "./components/SlideShow";
-import { ProgressBar } from "./components/ProgressBar";
+import Slider from "./components/Slider";
 
 
 function App() {
   return (
     <>
-    <Mobile/>
-    <SlideShow/>
+    <Slider/>
     </>
   );
 }
