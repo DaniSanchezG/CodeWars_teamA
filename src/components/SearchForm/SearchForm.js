@@ -1,5 +1,4 @@
 import './SearchForm.css'
-
 import Button from '../Button/Button'
 
 export default function SearchForm ({ openLoginModal, openRegisterModal, logged, }) {
@@ -11,9 +10,7 @@ export default function SearchForm ({ openLoginModal, openRegisterModal, logged,
       </form>
       
         {(
-      
           <div className="button-group">
-         
             <Button open={() => openRegisterModal(true)} text={'SIGN IN'} name={'login__button'} />
           </div>
         )

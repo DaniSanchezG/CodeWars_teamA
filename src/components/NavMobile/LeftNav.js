@@ -83,13 +83,7 @@ const LeftNav = ({ open , openRegisterModal}) => {
           <a href="#!"><ion-icon name="person" md="md-person"></ion-icon></a><p>SIGN IN</p>
           </button>
         </div>
-       {/* <SearchForm/>
-        <div className="button-group_drop">
-         /////MISSING ICON//// */}
-         {/* <Button open={() => openRegisterModal(true)} text={'SIGN IN'} name={'login__button'} />
-       </div> */}
-      
-
+       
         <ul className="social__links">
         <li className="social__icon"><a href="#!"><ion-icon name="logo-facebook"></ion-icon></a></li>
         <li className="social__icon"><a href="#!"><ion-icon name="logo-instagram"></ion-icon></a></li>
@@ -99,8 +93,7 @@ const LeftNav = ({ open , openRegisterModal}) => {
       </ul>
       
    </Ul>
-       
-        </>
+    </>
   )
 }
 

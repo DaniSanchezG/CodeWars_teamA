@@ -1,13 +1,11 @@
 .search_container{
   display: flex;
 }
-
 .search__form {
   display: flex;
   justify-content: flex-end;
   padding-right: 20px;
 }
-
 .search__input {
   width: 200px;
   height: 40px;
@@ -19,11 +17,9 @@
   font-size: 1rem;
   color:#fff;
 }
-
 .search__input:focus {
   filter: brightness(120%);
 }
-
 .search__button {
   height: 40px;
   /* background-color: #242424; */
@@ -39,16 +35,6 @@
 .search__input:focus + .search__button {
   filter: brightness(120%);
 }
-/* SIGN IN CSS */
-/* .button-group {
-  width: fit-content;
-  margin-top: 1.5em;
-  margin-left: auto;
-  color: #242424;
-  font-size: 0.9rem;
-  font-weight: bold;
-} */
-
 .login__button {
   background-color: #000;
   color: #7a7a7a;
@@ -59,7 +45,6 @@
   transition: color 0.8s ease;
   margin-top: 15px;
 }
-
 .login__button:hover,
 .login__button:focus {
   color:#fff;

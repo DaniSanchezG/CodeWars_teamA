@@ -2,13 +2,11 @@ import { NavLink } from "react-router-dom"
 import './Nav.css'
 import NavMobile from '../NavMobile/Burger'
 import React from 'react';
-
 export default function Nav () {
   
   return (
     <>
-    {/* //IF NavMobile IS IMPORTED OUTSIDE nav DROP-DOWN LIST DOESNT STEP ON THE LOGO */}
-    <NavMobile /> 
+      <NavMobile /> 
 
     <nav className="nav">
     
