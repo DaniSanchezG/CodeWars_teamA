@@ -108,7 +108,7 @@ const slideImages = [
       zIndex: "5",
       top: "28%",
       alignItems: "center",
-      marginLeft: "450px",
+      marginLeft: "72%",
     },
     css_button: {
       backgroundColor: "#ffdb27",
