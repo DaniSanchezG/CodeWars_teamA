@@ -63,7 +63,7 @@ class Mobile extends Component {
       arrows: false,
       infinite: true,
       easing: "ease",
-      indicators: (i) => <div className={classes.indicator}>-</div>,
+      indicators: (i) => <div className={classes.indicator}>-</div>
     };
     
     return (
