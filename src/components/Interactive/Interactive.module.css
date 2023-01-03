@@ -698,7 +698,7 @@
     background-color: rgb(29, 30, 31);
     border-radius: 5px;
     margin: 10px 40px;
-    margin-top: 160px;
+    margin-top: 200px;
   }
   .wrapper-img4 {
     position: absolute;
@@ -708,7 +708,7 @@
     background-color: rgb(29, 30, 31);
     border-radius: 5px;
     margin: 10px 40px;
-    margin-top: 320px;
+    margin-top: 390px;
   }
 
   .text-2 {
@@ -724,7 +724,7 @@
   .trapecio2 {
     position: absolute;
     margin-left: 260px;
-    margin-top: 107px;
+    margin-top: 137px;
     width: 250px;
     border-right: 60px solid transparent;
     border-left: 60px solid transparent;
@@ -733,7 +733,7 @@
   .trapecio3 {
     position: absolute;
     margin-left: 260px;
-    margin-top: 255px;
+    margin-top: 330px;
     width: 250px;
     border-right: 60px solid transparent;
     border-left: 60px solid transparent;
@@ -742,7 +742,7 @@
   .trapecio4 {
     position: absolute;
     margin-left: 260px;
-    margin-top: 410px;
+    margin-top: 520px;
     width: 250px;
     min-height: -80em;
     border-right: 60px solid transparent;
@@ -752,7 +752,7 @@
   .trapecio1 {
     position: absolute;
     margin-left: 400px;
-    margin-top: -25px;
+    margin-top: -5px;
     width: 250px;
     height: 0px;
     border-right: 60px solid transparent;
