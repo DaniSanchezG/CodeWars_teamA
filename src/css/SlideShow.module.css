@@ -55,13 +55,25 @@
   
   
 }
+@media (min-width: 1300px) {
+    .img_preview{
+        top:85.5%
+    }
+}
 @media (min-width: 1400px) {
     .img_preview{
-        top:86%
+        top:86%;
+        left:23vw
+    }
+}
+@media (min-width: 1460px) {
+    .img_preview{
+        top: 86.5%
     }
 }
 @media (min-width: 1500px) {
     .img_preview{
-        top:87%
+        top:87%;
+        left:24vw
     }
 }
