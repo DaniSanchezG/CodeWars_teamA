@@ -10,12 +10,14 @@ import Interactive from "./components/Interactive/Interactive";
 import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
 import SearchForm from "./components/SearchForm/SearchForm";
+import Slider from "./components/Slider/Slider";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Slider />} />
           <Route path="/films" element={<Films />} />
           <Route path="/films/:filmId" element={<MovieDetails  />} />
           <Route path="/databank" element={<Databank  />} />
@@ -42,4 +44,5 @@ function Layout() {
 }
 
 export default App;
+
 
