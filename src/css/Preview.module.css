@@ -5,8 +5,6 @@
   flex-direction: row;
   flex: 1 1 1 1;
   position: absolute;
-  top: 65.75%;
-  left: 22%;
   width: 800px;
   z-index: 12;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { useState } from "react";
 import { Slide } from "react-slideshow-image";
 import ImagePreview from "./ImagePreview";
+import { ProgressBar } from "./ProgressBar";
 import "react-slideshow-image/dist/styles.css";
 import classes from "../css/SlideShow.module.css";
 import image1 from "../img/first.jpeg";
@@ -108,7 +108,7 @@ const slideImages = [
       zIndex: "5",
       top: "28%",
       alignItems: "center",
-      marginLeft:'450px'
+      marginLeft: "450px",
     },
     css_button: {
       backgroundColor: "#ffdb27",
@@ -153,25 +153,27 @@ class SlideShow extends Component {
     };
 
     return (
-      <div className="container">
-        <Slide ref={this.slideRef} {...properties}>
-          {slideImages.map((slideImages, index) => (
-            <>
-              <div className={classes.conta} key={index}>
-                <img src={slideImages.url} className={classes.slideImg} />
-              </div>
-              <div style={slideImages.css}>
-                <span className={classes.title}>{slideImages.title}</span>
-                <span className={classes.content}>{slideImages.content}</span>
-                <button style={slideImages.css_button}>
-                  {slideImages.button}
-                </button>
-              </div>
-            </>
-          ))}
-        </Slide>
-        <div className='img-preview'>
-            <ImagePreview/>
+      <div className={classes.container}>
+        <div>
+          <Slide ref={this.slideRef} {...properties}>
+            {slideImages.map((slideImages, index) => (
+              <>
+                <div className={classes.conta} key={index}>
+                  <img src={slideImages.url} className={classes.slideImg} />
+                </div>
+                <div style={slideImages.css}>
+                  <span className={classes.title}>{slideImages.title}</span>
+                  <span className={classes.content}>{slideImages.content}</span>
+                  <button style={slideImages.css_button}>
+                    {slideImages.button}
+                  </button>
+                </div>
+              </>
+            ))}
+          </Slide>
+        </div>
+        <div className={classes.img_preview}>
+          <ImagePreview />
         </div>
       </div>
     );

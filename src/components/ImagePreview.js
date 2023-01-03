@@ -36,7 +36,7 @@ function ImagePreview() {
   return (
     <div className={classes.divPreview}>
       {image.map((image, index) => (
-        <div className={classes.divComponents}>
+        <div className={classes.divComponents} data-key={index}>
           <img src={image.url} className={classes.img} />
           <div className={classes.divExtra} key={index}>
             <ProgressBar/>
@@ -46,7 +46,7 @@ function ImagePreview() {
           </div>
         </div>
       ))}
-      ;
+      
     </div>
   );
 }
