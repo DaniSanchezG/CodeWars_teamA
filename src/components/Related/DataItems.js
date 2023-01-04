@@ -1,16 +1,24 @@
 //CSS
 import classes from "./Cards.module.css";
 import ButtonNeon from "../UI/Buttons/ButtonNeon";
+import { useState } from "react";
 
-function DataItems(props) {
+function DataItems({ img, character }) {
+  const [hover, setHover] = useState(false);
   return (
-    <li character={props.character} img={props.img}>
-      <div className={classes["cards-container"]}>
-        <img src={props.img} />
+    <li character={character} img={img}>
+      <div
+        className={classes["cards-container"]}
+        onMouseEnter={() => setHover(true)}
+        onMouseOut={() => setHover(false)}
+      >
+        <img src={img} />
         <div className={classes["characters-container"]}>
-          <ButtonNeon/>
+          <div className={classes.visibility}>
+            <ButtonNeon hoverOn={hover} />
+          </div>
           <div className={classes["content-info"]}>
-            <h3>{props.character}</h3>
+            <h3>{character}</h3>
           </div>
         </div>
       </div>
