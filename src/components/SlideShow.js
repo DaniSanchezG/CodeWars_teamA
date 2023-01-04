@@ -8,6 +8,8 @@ import image1 from "../img/first.jpeg";
 import image2 from "../img/second.jpeg";
 import image3 from "../img/third.jpeg";
 import image4 from "../img/fourth.jpeg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const slideImages = [
   {
@@ -141,8 +143,31 @@ class SlideShow extends Component {
   next() {
     this.slideRef.current.goNext();
   }
-
+  
   render() {
+
+    const buttonStyle = {
+      margin:'0em 1em 0 1em',
+      width: "35px",
+      borderRadius:'5rem',
+      height:"35px",
+      color:'none',
+      backgroundColor: 'white',
+      opacity:'.5',
+      border: '0px',
+      fontSize:'30px'
+  };
+  const indicatorsCss={
+    width:'140px',
+    height:'90px',
+    marginRight:'0.5em',
+    left:'25%',
+    zIndex:'1000', 
+    backgroundColor: 'white',
+    top:'0',
+    
+  };
+  const indicators=()=>(<div style={{...indicatorsCss}}></div>)
     const properties = {
       duration: 5000,
       autoplay: true,
@@ -150,12 +175,14 @@ class SlideShow extends Component {
       arrows: true,
       infinite: true,
       easing: "ease",
+      prevArrow: <button style={{ ...buttonStyle }}><FontAwesomeIcon icon={faChevronLeft}/></button>,
+      nextArrow: <button style={{ ...buttonStyle }}><FontAwesomeIcon icon={faChevronRight}/></button>,  
     };
 
     return (
       <div className={classes.container}>
         <div>
-          <Slide ref={this.slideRef} {...properties}>
+          <Slide indicators={indicators} ref={this.slideRef} {...properties}>
             {slideImages.map((slideImages, index) => (
               <>
                 <div className={classes.conta} key={index}>
