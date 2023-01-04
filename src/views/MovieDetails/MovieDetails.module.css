@@ -1,14 +1,20 @@
 /* main container of the section */
 .movie-details-container {
   color: #ffffff;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   background-color: #000000;
-  padding-bottom: 4em;
+  padding-bottom: 1em;
 }
 
 body {
   background-color: #000000;
   color: white;
+}
+
+@media (min-width: 1200px) {
+  .movie-details-container {
+    padding-bottom: 5em;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -18,5 +24,3 @@ body {
     max-width: 1500px;
   }
 }
-
-
