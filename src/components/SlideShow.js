@@ -159,11 +159,12 @@ class SlideShow extends Component {
   };
   const indicatorsCss={
     width:'140px',
-    height:'90px',
+    height:'80px',
     marginRight:'0.5em',
     left:'25%',
     zIndex:'1000', 
     backgroundColor: 'white',
+    opacity:0.1,
     top:'0',
     
   };
