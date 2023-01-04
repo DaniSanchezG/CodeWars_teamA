@@ -1,7 +1,13 @@
 @media (min-width: 576px) {
+  .react-slideshow-container{
+    margin-top: 10em;
+  }
 }
 
 @media (min-width: 768px) {
+  .react-slideshow-container{
+    margin-top: 10em;
+  }
 }
 @media (max-width: 1199px) {
   .container {

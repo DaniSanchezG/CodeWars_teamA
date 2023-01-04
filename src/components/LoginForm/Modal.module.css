@@ -71,7 +71,7 @@ input[type="submit"] {
     margin-top: 0;
     font-size: 16.5px;
 }
-input[type="text"] {
+.input-login {
     border: 1px solid #edd700;
 }
 input[type="submit"] {
@@ -83,7 +83,7 @@ input[type="submit"]:hover {
     text-decoration: none;
     background-color: #3f6dac;
 }
-input[type="text"]:focus {
+.input-login:focus {
     color: #edd700;
     outline: none;
 }

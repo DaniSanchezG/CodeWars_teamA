@@ -1,12 +1,10 @@
 import React from "react";
 import style from './Modal.module.css'
 import { MdClose } from "react-icons/md";
-import logoWars from "../../assets/img/codeWars2.png";
-import logoDisney from '../../assets/img/code4.png'
+import logoWars from "../../assets/Img/codeWars2.png";
+import logoDisney from '../../assets/Img/code4.png'
 
 export const Modal = ({ children, estado, cambiarEstado }) => {
-    console.log(estado);
-
     return (
         <>
             {estado === true && (

@@ -5,6 +5,7 @@ import { EmailForm } from "./EmailForm";
 import style from "./Modal.module.css";
 //import PasswordForm from "./PasswordForm";
 //import SuccessMessage from "./SuccessMessage";
+import classes from "../SearchForm/SearchForm.module.css";
 
 const LoginForm = () => {
     const [visibility, setVisibility] = useState(false);
@@ -12,10 +13,10 @@ const LoginForm = () => {
     return (
         <>
             <button
-                className={style.button}
+                className={classes["login__button"]}
                 onClick={() => setVisibility(!visibility)}
             >
-                Abrir Modal
+                SING IN
             </button>
             <Modal estado={visibility} cambiarEstado={setVisibility}>
                 <EmailForm  />

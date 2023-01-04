@@ -4,7 +4,8 @@ import './Header.css'
 import Social from '../Social/Social'
 import SearchForm from '../SearchForm/SearchForm'
 
-export default function Header ({ openLoginModal, openRegisterModal, logged, setLogged }) {
+// export default function Header ({ openLoginModal, openRegisterModal, logged, setLogged }) {
+export default function Header () {
   return (
     <div className="container">
       <header className="header">
@@ -13,7 +14,7 @@ export default function Header ({ openLoginModal, openRegisterModal, logged, set
        <a href="/">
           <img src={logo} alt="Star Code" className="header__logo" />
         </a>
-        <SearchForm openLoginModal={openLoginModal} openRegisterModal={openRegisterModal} logged={logged} setLogged={setLogged} />
+        <SearchForm />
       </header>
     </div>
 

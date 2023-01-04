@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { NavLink } from "react-router-dom"
 import '../../components/NavMobile/LeftNav.css'
+import LoginForm from '../LoginForm/LoginForm';
 // import Social from '../Social/Social'
 // import Button from '../Button/Button';
 
@@ -36,7 +37,7 @@ const Ul = styled.ul`
 const LeftNav = ({ open , openRegisterModal}) => {
   return (
     <>
-    <Ul open={open}>
+    <Ul open={open} style={{zIndex:"1000"}}>
     
         <li className="nav__link_left">
           <NavLink exact to="/">HOME</NavLink>
@@ -78,16 +79,12 @@ const LeftNav = ({ open , openRegisterModal}) => {
         </li>
         <span className="navMovile_span"></span>
 
-        <div>
-          <button className='sign-in-user'>
+        <div className='prueba'>
+          <LoginForm />
+          {/* <button className='sign-in-user'>
           <a href="#!"><ion-icon name="person" md="md-person"></ion-icon></a><p>SIGN IN</p>
-          </button>
+          </button> */}
         </div>
-       {/* <SearchForm/>
-        <div className="button-group_drop">
-         /////MISSING ICON//// */}
-         {/* <Button open={() => openRegisterModal(true)} text={'SIGN IN'} name={'login__button'} />
-       </div> */}
       
 
         <ul className="social__links">
