@@ -26,11 +26,15 @@
     .container_slider{
         position: absolute;
     }
+    .react-slideshow-container{
+        margin-top: 4.8em;
+    }
   .slideImg {
     height: 100%;
     min-width: 100%;
     background-repeat: no-repeat;
   }
+
 
   /*-------------TEXTO--------------*/
   .title {
@@ -67,21 +71,36 @@
     .img_preview{
         top:85.5%
     }
+    .react-slideshow-container{
+      margin-top: 4.8em;
+  }
 }
 @media (min-width: 1400px) {
     .img_preview{
         top:86%;
         left:23vw
     }
+    .react-slideshow-container{
+      margin-top: 4.8em;
+  }
 }
 @media (min-width: 1460px) {
     .img_preview{
         top: 86.5%
     }
+    .react-slideshow-container{
+      margin-top: 4.8em;
+  }
 }
 @media (min-width: 1500px) {
     .img_preview{
         top:87%;
         left:24vw
     }
+    .react-slideshow-container{
+      margin-top: 4.8em;
+  }
+  .container{
+    margin-top: 4.8em !important;
+  }
 }

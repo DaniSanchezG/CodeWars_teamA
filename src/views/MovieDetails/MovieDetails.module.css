@@ -4,6 +4,7 @@
   font-family: "Cabin", sans-serif;
   background-color: #000000;
   padding-bottom: 4em;
+  margin-top: 4em;
 }
 
 body {
@@ -11,10 +12,55 @@ body {
   color: white;
 }
 
+.movie-details-container {
+  color: #ffffff;
+  font-family: "Cabin", sans-serif;
+  background-color: #000000;
+  padding-bottom: 1em;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+}
+
+@media (min-width: 320px) {
+  .movie-details-container {
+    padding-bottom: 2em;
+    margin-top: 2em;
+  }
+}
+@media (min-width: 540px) {
+  .movie-details-container {
+    padding-bottom: 2em;
+    margin-top: 5em;
+  }
+}
+@media (min-width: 768px) {
+  .movie-details-container {
+    padding-bottom: 2em;
+    margin-top: 5em;
+  }
+}
+@media (min-width: 992px) {
+  .movie-details-container {
+    padding-bottom: 2em;
+    margin-top: 5em;
+  }
+}
+@media (min-width: 1200px) {
+  .movie-details-container {
+    padding-bottom: 5em;
+    margin-top: 5em;
+  }
+}
+
 @media (min-width: 1400px) {
   .movie-details-container {
     width: 90%;
     margin: 0 auto;
     max-width: 1500px;
+    margin-top: 6em;
   }
 }
+

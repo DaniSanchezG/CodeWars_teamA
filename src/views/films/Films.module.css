@@ -39,7 +39,9 @@
   height: 4px;
   background-color: white;
 }
-
+.advertising-bar{
+  margin-top: 4em;
+}
 .advertising-bar a{
   color: white;
   text-decoration: none;
@@ -239,6 +241,9 @@
     flex-direction: row;
     align-items: flex-start;
   }
+  .advertising-bar{
+    margin-top: 4em;
+  }
 
   .tick{
     display:none;
@@ -278,5 +283,8 @@
 }
 .aside-text{
   margin-left: 15em;
+}
+.advertising-bar{
+  margin-top: 5em;
 }
 }
