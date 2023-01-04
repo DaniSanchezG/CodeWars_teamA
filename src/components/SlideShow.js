@@ -147,15 +147,16 @@ class SlideShow extends Component {
   render() {
 
     const buttonStyle = {
-      margin:'0em 1em 0 1em',
-      width: "35px",
+      margin:'0em .5em 0 .5em',
+      width: "60px",
       borderRadius:'5rem',
-      height:"35px",
+      height:"60px",
       color:'none',
       backgroundColor: 'white',
       opacity:'.5',
       border: '0px',
-      fontSize:'30px'
+      fontSize:'30px',
+      cursor:'pointer'
   };
   const indicatorsCss={
     width:'140px',
