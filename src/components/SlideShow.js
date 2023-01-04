@@ -164,7 +164,7 @@ class SlideShow extends Component {
     left:'25%',
     zIndex:'1000', 
     backgroundColor: 'white',
-    opacity:0.1,
+    opacity:0,
     top:'0',
     
   };
