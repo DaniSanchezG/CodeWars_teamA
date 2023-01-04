@@ -14,7 +14,7 @@ body {
 .cards-container {
   width: 100%;
   height: auto;
-  padding: 0.9em;
+  padding: .8em;
 }
 
 /*Para dar movimiento a la Cards */
@@ -48,7 +48,7 @@ body {
 
 .cards-container .content-info {
   padding: 0 0 0 0.8em;
-  padding-bottom: 5em;
+  padding-bottom: 1.8em;
 }
 
 .cards-container h3 {
@@ -57,7 +57,7 @@ body {
   color: #ffffff;
   cursor: pointer;
   /* padding: 2.5em 0; */
-  margin: -1.8em 0.2em;
+  margin: .8em 0.2em;
 }
 
 @media (min-width: 500px) {
@@ -69,7 +69,7 @@ body {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .related {
-    margin: 0.2em 1.7em;
+    margin: .2em 1.7em;
   }
   .related > ul {
     justify-content: space-around;
@@ -80,15 +80,15 @@ body {
   }
   .cards-container .content-info h3 {
     font-size: 1.1em;
-    margin: -1.4em 0;
+    margin:1.8em 0;
   }
   .cards-container .content-info {
-    padding: 0 0 0 0.8em;
-    padding-bottom: 6.2em;
+    padding: 0 0 0 .8em;
+    padding-bottom: 4em;
   }
   .visibility {
     visibility: visible;
-    margin: -0.3em 0.3em;
+    margin: -0.8em 0.8em;
   }
 }
 
@@ -105,11 +105,11 @@ body {
   }
   .cards-container .content-info h3 {
     font-size: 1.3em;
-    margin: -.9em 0;
+    margin: 1.8em 0;
   }
   .cards-container .content-info {
     padding: 0 0 0 0.8em;
-    padding-bottom: 4.9em;
+    padding-bottom: 1.1em;
   }
   .visibility {
     visibility: visible;

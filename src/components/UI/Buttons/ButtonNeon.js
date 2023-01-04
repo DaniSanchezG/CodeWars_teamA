@@ -1,9 +1,15 @@
 import classes from "./ButtonNeon.module.css";
+import { useState, useEffect } from "react"
 
-function ButtonNeon() {
+function ButtonNeon({ hoverOn } ) {
+  const [hover, setHover] = useState(false);
+
+  useEffect(()=>{
+    setHover(hoverOn)
+  },[hoverOn])
   return (
     <>
-      <div className={classes["-container"]}>
+      <div className={hover ? classes.hovered : classes.container}>
         <span></span>
         <span></span>
       </div>
